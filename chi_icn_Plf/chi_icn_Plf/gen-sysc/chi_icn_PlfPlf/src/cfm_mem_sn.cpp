@@ -33,6 +33,7 @@ cfm_mem_sn::cfm_mem_sn(sc_core::sc_module_name name) :
 	 ("SI");*/
 
 	// connections
+	//CHI_ICN is not streaming connection 
 	/*p_bus_CHI_ICN
 	 (SI->p_target_socket);
 	 */

@@ -20,7 +20,7 @@ SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=gnu++11 -O2 -Wall -fmessage-length=100 
 SET(CMAKE_CXX_LINK_FLAGS "${CMAKE_CXX_LINK_FLAGS} -pthread ")
 
 
-SET(PROJECT_FOLDER "/root/cof-workspace/chi_icn_plf_backup")
+SET(PROJECT_FOLDER "/home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_Plf")
 SET(COF_SCL_PATH "/root/cof-pack/cof-scl-isim-9.0.2-220617_lic")
 
 
@@ -36,17 +36,17 @@ INCLUDE(
 
 # Header directories
 INCLUDE_DIRECTORIES(
-    "/root/cof-workspace/chi_icn_plf_backup/chi_icn_plf_new/gen-sysc/chi_icn_plf_newPlf/include"
-    "/root/cof-workspace/chi_icn_plf_backup/external/include"
+    "/home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_Plf/chi_icn_Plf/gen-sysc/chi_icn_PlfPlf/include"
+    "/home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_Plf/external/include"
 
-    "/root/cof-workspace/chi_icn_plf_backup/external/include/chi"
-    "/root/cof-workspace/chi_icn_plf_backup/external/include/chi/test-modules"
-    "/root/cof-workspace/chi_icn_plf_backup/external/include/chi/tlm-modules"
-    "/root/cof-workspace/chi_icn_plf_backup/external/include/chi/tlm-bridges"
-    "/root/cof-workspace/chi_icn_plf_backup/external/include/chi/tlm-extensions"
-    "/root/cof-workspace/chi_icn_plf_backup/external/include/traffic-generators"
-    "/root/cof-workspace/chi_icn_plf_backup/external/include/chi/tlm-modules/private/ccix"
-    "/root/cof-workspace/chi_icn_plf_backup/external/include/chi/tlm-modules/private/chi"
+    "/home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_Plf/external/include/chi"
+    "/home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_Plf/external/include/chi/test-modules"
+    "/home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_Plf/external/include/chi/tlm-modules"
+    "/home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_Plf/external/include/chi/tlm-bridges"
+    "/home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_Plf/external/include/chi/tlm-extensions"
+    "/home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_Plf/external/include/traffic-generators"
+    "/home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_Plf/external/include/chi/tlm-modules/private/ccix"
+    "/home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_Plf/external/include/chi/tlm-modules/private/chi"
 
 
     "/root/cof-pack/cof-scl-isim-9.0.2-220617_lic/include/cofluent"
@@ -57,13 +57,13 @@ INCLUDE_DIRECTORIES(
 
 # Library directories
 LINK_DIRECTORIES(
-    "/root/cof-workspace/chi_icn_plf_backup/external/lib"
+    "/home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_Plf/external/lib"
     "/root/cof-pack/cof-scl-isim-9.0.2-220617_lic/lib/${COFS_LIBS_PATH_FOR_GCC}"
     "/root/cof-pack/cof-scl-isim-9.0.2-220617_lic/lib"
 )
 
-aux_source_directory("/root/cof-workspace/chi_icn_plf_backup/chi_icn_plf_new/gen-sysc/chi_icn_plf_newPlf/src" COFS_SOURCES)
-aux_source_directory("/root/cof-workspace/chi_icn_plf_backup/external/src" COFS_SOURCES)
+aux_source_directory("/home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_Plf/chi_icn_Plf/gen-sysc/chi_icn_PlfPlf/src" COFS_SOURCES)
+aux_source_directory("/home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_Plf/external/src" COFS_SOURCES)
 
 #message(${COFS_SOURCES})
 

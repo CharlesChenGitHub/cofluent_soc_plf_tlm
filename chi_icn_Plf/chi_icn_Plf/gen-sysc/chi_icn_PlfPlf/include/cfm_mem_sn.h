@@ -30,9 +30,10 @@
 ///        \page dxpmem_sn
 //@{
 ///    \brief mem_sn function model start
-class cfm_mem_sn:
+class cfm_mem_sn :
 /*Start of 'Inherited classes declaration' from mem_sn's property generated code*/
-public SlaveNode_F<10 comma 20>
+public SlaveNode_F<10,
+public 20>
 /*End of 'Inherited classes declaration' from mem_sn's property generated code*/
 {
 public:

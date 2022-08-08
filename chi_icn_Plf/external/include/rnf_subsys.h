@@ -35,7 +35,7 @@ using namespace std;
 using namespace cf_core;
 */
 
-#define NODE_ID_RNF0 0
+#define NODE_ID_RNF0 0 //初始化NODE ID 应该按照对应的rnf id，否则无法体现多个rnf
 #define NODE_ID_RNF1 1
 
 #define NUM_RN_F 2
@@ -46,7 +46,7 @@ using namespace cf_core;
 #define RAM_SIZE (32 * CACHELINE_SZ)
 
 // Increase for more random traffic
-#define NUM_TXNS_RNF0 20
+#define NUM_TXNS_RNF0 200
 #define NUM_TXNS_RNF1 20000
 
 //typedef TLMTrafficGenerator::DoneCallback TGDoneCallBack;
@@ -141,11 +141,12 @@ static TrafficDesc xfers(merge({
 		Expect(DATA(0x0, 0x1), 2),
 	AtomicLoad(LINE(27), DATA(0x0, 0x1), 2),
 		Expect(DATA(0x1, 0x2), 2),
-	AtomicLoad(LINE(27), DATA(0xFF, 0xFF), 2, Req::Atomic::CLR),
+	
+	AtomicLoad(LINE(27), DATA(0xFF, 0xFF), 2),
 		Expect(DATA(0x1, 0x3), 2),
 
 	AtomicSwap(LINE(27), DATA(0xFF, 0xFF), 2),
-		Expect(DATA(0x0, 0x0), 2),
+		Expect(DATA(0x0, 0x3), 2),
 	AtomicSwap(LINE(27), DATA(0x0, 0x0), 2),
 		Expect(DATA(0xFF, 0xFF), 2),
 
@@ -163,11 +164,13 @@ static TrafficDesc xfers(merge({
 		Expect(DATA(0x1, 0x2, 0x3, 0x4), 4),
 
 	// Test a failed exclusive
+	
 	ExclusiveStore(LINE(26), DATA(0x2, 0x4, 0x5, 0x6)),
 	Read(LINE(26), 4),
 		Expect(DATA(0x1, 0x2, 0x3, 0x4), 4),
-
+	
 	DVMOperation(0),
+	
 }));
 
 // Top simulation module.
@@ -176,8 +179,9 @@ class rnf_subsys : public cf_core::cf_processor
 {
 public:
 	RandomTraffic rand_traffic;
-	
-	RequestNode_F<NODE_ID_RNF0, CACHE_SIZE> rnf;
+
+	RequestNode_F<NODE_ID_RNF0, CACHE_SIZE> *rnf;
+
 
 	//TGDoneCallBack m_tgDoneCB;
 //	CHIChecker_t checker0;
@@ -186,15 +190,34 @@ public:
 
 	rnf_subsys(sc_module_name name) :
 
-		rand_traffic(0, RAM_SIZE, (~(0x3llu)),
-				1, RAM_SIZE, RAM_SIZE, NUM_TXNS_RNF0),
 		
-		rnf("rnf", rand_traffic),
+		rand_traffic(0, RAM_SIZE, (~(0x3llu)),
+				1, RAM_SIZE, RAM_SIZE, NUM_TXNS_RNF1),
+		
+		//rnf("rnf", rand_traffic),
+		
 		cf_processor("rnf_subsys")
-	{
-		rnf.GetTrafficGenerator().setStartDelay(sc_time(100, SC_US));
-		rnf.GetTrafficGenerator().addTransfers(xfers, 0, NULL);
-		rnf.GetTrafficGenerator().enableDebug();
+	{		
+		
 
+		if(strcmp(name, "tg_rnf[0]") == 0){
+			RandomTraffic *tmp = new RandomTraffic(0, RAM_SIZE, (~(0x3llu)),
+				1, RAM_SIZE, RAM_SIZE, NUM_TXNS_RNF0);
+			rand_traffic = *tmp;
+			rnf = new RequestNode_F<NODE_ID_RNF0, CACHE_SIZE> ("rnf0", rand_traffic);
+			rnf->GetTrafficGenerator().setStartDelay(sc_time(100, SC_US));
+			rnf->GetTrafficGenerator().addTransfers(xfers, 0, NULL);
+			rnf->GetTrafficGenerator().enableDebug();
+		}
+		else if(strcmp(name, "tg_rnf[1]") == 0){
+			RandomTraffic *tmp = new RandomTraffic(0, RAM_SIZE, (~(0x3llu)),
+				1, RAM_SIZE, RAM_SIZE, NUM_TXNS_RNF1);
+			rand_traffic = *tmp;
+			RequestNode_F<NODE_ID_RNF1, CACHE_SIZE>* rnf1 = new RequestNode_F<NODE_ID_RNF1, CACHE_SIZE> ("rnf1", rand_traffic);
+			rnf1->GetTrafficGenerator().setStartDelay(sc_time(16000, SC_US));
+			//rnf1->GetTrafficGenerator().addTransfers(xfers, 0, NULL);
+			//rnf1->GetTrafficGenerator().enableDebug();
+			rnf = (RequestNode_F<NODE_ID_RNF0, CACHE_SIZE>*) rnf1;
+		}
 	}
 };

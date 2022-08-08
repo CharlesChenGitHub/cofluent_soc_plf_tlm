@@ -81,11 +81,15 @@ cfm_chi_icn_plfplf::cfm_chi_icn_plfplf(sc_core::sc_module_name name) :
 				cfm_tg_rnf::itc_proc_tg_rnf_cb_after_inactive);
 	}
 	// connections
-	customized_soc_bind(bus_CHI_ICN, mem_sn); //SoC TLM2 mono instance
+	//CHI_ICN is not streaming connection 
+
+	customized_soc_bind(bus_CHI_ICN, mem_sn);	//SoC TLM2 mono instance
 	for (cf_count i = 0; i < (cf_count) 2; i++) {
 		cfm_tg_rnf* module = tg_rnf_vec[i];
 		if (module != nullptr) {
-			customized_soc_bind(bus_CHI_ICN, tg_rnf_vec[i], i); //SoC TLM2 multiple instance
+			//CHI_ICN is not streaming connection 
+
+			customized_soc_bind(bus_CHI_ICN, tg_rnf_vec[i], i);	//SoC TLM2 multiple instance
 		}
 	}
 

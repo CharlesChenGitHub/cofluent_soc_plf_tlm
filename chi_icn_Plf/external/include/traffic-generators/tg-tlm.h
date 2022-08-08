@@ -246,7 +246,7 @@ private:
 
 			if (transfers->getExpect() &&
 				memcmp(transfers->getExpect(),
-					trans.get_data_ptr(), trans.get_data_length())) {
+					trans.get_data_ptr(), trans.get_data_length())){
 				SC_REPORT_ERROR("TLMTrafficGenerator",
 						"Read data not same as expected!\n");
 			}

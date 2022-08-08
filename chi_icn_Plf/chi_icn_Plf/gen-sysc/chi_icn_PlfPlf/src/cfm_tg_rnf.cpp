@@ -33,6 +33,7 @@ cfm_tg_rnf::cfm_tg_rnf(sc_core::sc_module_name name) :
 	 ("MI");*/
 
 	// connections
+	//CHI_ICN is not streaming connection 
 	/*			 	    MI->p_initiator_socket
 	 (p_bus_CHI_ICN
 	 );

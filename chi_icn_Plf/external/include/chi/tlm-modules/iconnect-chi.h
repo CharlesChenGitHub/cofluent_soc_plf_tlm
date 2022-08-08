@@ -1708,8 +1708,10 @@ private:
 				log_trans(t);
 				m_init_socket->b_transport(t->GetGP(), delay);
 
+				
 				assert(t->GetGP().get_response_status() ==
 						tlm::TLM_OK_RESPONSE);
+				
 				delete t;
 			}
 		}
@@ -1719,7 +1721,7 @@ private:
 			std::cout << std::left << std::setw(10) << ts << " ";
 			auto opcode = trans->GetOpCodeStr();
 			std::cout << "HN[" << std::setw(2) 
-				<< std::dec << NODE_ID << "] -> XN[" 
+				<< std::dec << NODE_ID << "] -> XN["  //目的节点可能是RN或FN，具体由target ID判断
 				<< std::setw(2) << trans->GetTgtID() << "]: " 
 				<< std::right << std::setfill('0') << std::setw(8) << std::hex 
 				<< trans->GetGP().get_address() << " "
@@ -2197,6 +2199,8 @@ private:
 		tlm_utils::simple_target_socket<Port_SN> rxrsp_tgt_socket;
 		tlm_utils::simple_target_socket<Port_SN> rxdat_tgt_socket;
 
+		//tlm_utils::simple_target_socket<Port_SN> tgt_socket;
+
 		SC_HAS_PROCESS(Port_SN);
 
 		Port_SN(sc_module_name name,
@@ -2209,6 +2213,8 @@ private:
 
 			rxrsp_tgt_socket("rxrsp_tgt_socket"),
 			rxdat_tgt_socket("rxdat_tgt_socket"),
+
+			//tgt_socket("tgt_socket"),
 
 			m_router(router),
 			m_txReqChannel("TxReqChannel", txreq_init_socket),

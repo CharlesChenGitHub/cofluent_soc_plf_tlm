@@ -172,7 +172,6 @@ public:
 		port.bind_upstream(m_cache);
 	}
 public:
-
 	typedef cache_chi<NODE_ID, SZ_CACHE, ICN_ID> cache_chi_t;
 
 	Port_RN_F port;
@@ -185,6 +184,7 @@ public:
 	{
 		ConnectSockets();
 	}
+
 
 	template<typename T>
 	RequestNode_F(sc_core::sc_module_name name, T& transfers) :

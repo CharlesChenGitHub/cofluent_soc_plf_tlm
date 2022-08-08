@@ -51,6 +51,7 @@ using namespace cf_core;
 #include "tlm-extensions/chiattr.h"
 #include "tlm-bridges/amba-chi.h"
 #include "tlm-modules/private/chi/txnids.h"
+#include "memory.h"
 
 using namespace AMBA::CHI;
 
@@ -1211,13 +1212,14 @@ private:
 	RequestOrderer m_reqOrderer;
 
 public:
-	tlm_utils::simple_initiator_socket<SlaveNode_F> init_socket;
+	tlm_utils::simple_initiator_socket<SlaveNode_F> init_socket; 
 
 	tlm_utils::simple_target_socket<SlaveNode_F> rxreq_tgt_socket;
 	tlm_utils::simple_target_socket<SlaveNode_F> rxdat_tgt_socket;
 
 	tlm_utils::simple_initiator_socket<SlaveNode_F> txrsp_init_socket;
 	tlm_utils::simple_initiator_socket<SlaveNode_F> txdat_init_socket;
+	memory mem;
 
 	//SC_HAS_PROCESS(SlaveNode_F);
 	//SC_CTOR(mem_sn)
@@ -1230,20 +1232,23 @@ public:
 		m_txRspChannel("TxRspChannel", txrsp_init_socket),
 		m_txDatChannel("TxDatChannel", txdat_init_socket),
 
-		m_txnProcessor("slave_port",
-				init_socket,
-				m_ids,
-				m_txRspChannel,
-				m_txDatChannel,
-				m_txn),
-
 		m_toggle(false),
+
+		
+		m_txnProcessor("slave_port",
+			init_socket,
+			m_ids,
+			m_txRspChannel,
+			m_txDatChannel,
+			m_txn),
 
 		m_reqOrderer("reqOrderer",
 				m_txnProcessor),
 
 		init_socket("init_socket"),
 
+		mem("mem", sc_time(10, SC_NS), 32*64),
+		
 		rxreq_tgt_socket("rxreq_tgt_socket"),
 		rxdat_tgt_socket("rxdat_tgt_socket"),
 

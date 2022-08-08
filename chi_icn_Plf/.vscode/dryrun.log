@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/root/cof-workspace/chi_icn_Plf'
+make: Leaving directory `/root/cof-workspace/chi_icn_Plf'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+

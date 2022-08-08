@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "C:/Users/qianche1/cof-pack/pycof-2.3.36/Lib/site-packages/"
+    ],
+    "python.terminal.executeInFileDir": true
+}

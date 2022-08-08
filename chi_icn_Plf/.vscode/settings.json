@@ -1,0 +1,7 @@
+{
+    "python.analysis.extraPaths": [
+        "/tmp/root/cof-pack/pycof-2.3.36/lib/python3.8/site-packages/"
+    ],
+    "python.terminal.executeInFileDir": true,
+    "cmake.configureOnOpen": false
+}

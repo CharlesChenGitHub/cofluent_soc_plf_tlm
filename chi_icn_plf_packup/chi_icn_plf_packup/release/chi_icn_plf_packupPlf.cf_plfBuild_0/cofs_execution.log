@@ -1,0 +1,16 @@
+[INFO]  ================================================================================
+[INFO]          Intel(R) CoFluent(TM) Studio - Intel Corporation
+[INFO]      C++ Modeling Library for SystemC/TLM2 (SCL) version 9.0.0-r1 (release)
+[INFO]  --------------------------------------------------------------------------------
+[INFO]                      Mon Aug  8 14:12:31 2022
+[INFO]  ================================================================================
+[INFO]  
+[INFO]  0 ns:{pre-elaboration}> Simulation context: simulator = <./chi_icn_plf_packupPlf.exe>
+[INFO]  0 ns:{pre-elaboration}> Simulation context: default path = </home/netura/cof-workspace/chi_icn_plf_packup/chi_icn_plf_packup/release/chi_icn_plf_packupPlf.cf_plfBuild_0>
+[INFO]  0 ns:{pre-elaboration}> License check OK
+[INFO]  0 ns:{post-elaboration}> DP:  design parameter's initialization skipped, default input file not found </home/netura/cof-workspace/chi_icn_plf_packup/chi_icn_plf_packup/release/chi_icn_plf_packupPlf.cf_plfBuild_0/cofs_dp.csv>
+[INFO]  0 ns:{post-elaboration}> Monitoring manager:  monitoring configuration skipped, default input file not found </home/netura/cof-workspace/chi_icn_plf_packup/chi_icn_plf_packup/release/chi_icn_plf_packupPlf.cf_plfBuild_0/cofs_mon_probes.csv>
+[INFO]  9.22337203685478e+15 ns:/> Reached the specified simulation duration:
+[INFO]  9.22337203685478e+15 ns:/>   current simulated time:     9.22337203685478e+15 ns
+[INFO]  9.22337203685478e+15 ns:/>   host system clock duration: 0 s
+[INFO]  9.22337203685478e+15 ns:/>   transaction count:          0

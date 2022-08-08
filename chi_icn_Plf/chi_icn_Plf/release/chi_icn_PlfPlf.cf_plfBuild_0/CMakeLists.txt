@@ -4,10 +4,10 @@
 #  C++ Modeling Library for SystemC/TLM2 (SCL)
 #===============================================================================
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
-SET(CMAKE_CXX_COMPILER "//usr/local/bin/g++")
-SET(CMAKE_C_COMPILER "//usr/local/bin/g++")
+SET(CMAKE_CXX_COMPILER "//usr/bin/g++")
+SET(CMAKE_C_COMPILER "//usr/bin/g++")
 SET(CMAKE_C_COMPILER_FORCED TRUE)
-PROJECT(chi_icn_plf_backup)
+PROJECT(chi_icn_plf)
 if (CMAKE_CXX_COMPILER_VERSION VERSION_LESS 7.5)
     message(FATAL_ERROR "GCC version must be at least 7.5.")
 else()
@@ -21,7 +21,7 @@ SET(CMAKE_CXX_LINK_FLAGS "${CMAKE_CXX_LINK_FLAGS} -pthread ")
 
 
 SET(PROJECT_FOLDER "/home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_Plf")
-SET(COF_SCL_PATH "/root/cof-pack/cof-scl-isim-9.0.2-220617_lic")
+SET(COF_SCL_PATH "/home/netura/cof-pack/cof-scl-isim-9.0.2-220706_nolic")
 
 
 SET(CMAKE_VERBOSE_MAKEFILE ON)
@@ -49,17 +49,17 @@ INCLUDE_DIRECTORIES(
     "/home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_Plf/external/include/chi/tlm-modules/private/chi"
 
 
-    "/root/cof-pack/cof-scl-isim-9.0.2-220617_lic/include/cofluent"
-    "/root/cof-pack/cof-scl-isim-9.0.2-220617_lic/include/cofluent_isim"
-    "/root/cof-pack/cof-scl-isim-9.0.2-220617_lic/include/isim-attrs-interface"
-    "/root/cof-pack/cof-scl-isim-9.0.2-220617_lic/include/systemc"
+    "/root/cof-pack/cof-scl-isim-9.0.2-220706_nolic/include/cofluent"
+    "/root/cof-pack/cof-scl-isim-9.0.2-220706_nolic/include/cofluent_isim"
+    "/root/cof-pack/cof-scl-isim-9.0.2-220706_nolic/include/isim-attrs-interface"
+    "/root/cof-pack/cof-scl-isim-9.0.2-220706_nolic/include/systemc"
 )
 
 # Library directories
 LINK_DIRECTORIES(
     "/home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_Plf/external/lib"
-    "/root/cof-pack/cof-scl-isim-9.0.2-220617_lic/lib/${COFS_LIBS_PATH_FOR_GCC}"
-    "/root/cof-pack/cof-scl-isim-9.0.2-220617_lic/lib"
+    "/root/cof-pack/cof-scl-isim-9.0.2-220706_nolic/lib/${COFS_LIBS_PATH_FOR_GCC}"
+    "/root/cof-pack/cof-scl-isim-9.0.2-220706_nolic/lib"
 )
 
 aux_source_directory("/home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_Plf/chi_icn_Plf/gen-sysc/chi_icn_PlfPlf/src" COFS_SOURCES)
@@ -69,20 +69,23 @@ aux_source_directory("/home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_Pl
 
 # Library directories
 ADD_EXECUTABLE(
-	chi_icn_plf_backup
+	chi_icn_plf
 	${COFS_SOURCES}
 )
 
 # Library linked
 TARGET_LINK_LIBRARIES(
-	chi_icn_plf_backup
+	chi_icn_plf
 	cofscl
     systemc
     coflm
-    #ws2_32
-    #lmgr11
+    pthread
+    stdc++
+    dl
+    rt
 )
 
-SET_TARGET_PROPERTIES(chi_icn_plf_backup PROPERTIES SUFFIX ".exe")
+
+SET_TARGET_PROPERTIES(chi_icn_plf PROPERTIES SUFFIX ".exe")
 
 SET(EXECUTABLE_OUTPUT_PATH ".")

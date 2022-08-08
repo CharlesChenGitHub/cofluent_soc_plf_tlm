@@ -65,32 +65,5 @@
     "CofSetting.Path.Variables": {
         "PROJECT_FOLDER": "/nfs/site/home/qianche1/scci71077_tmp/cofluent_soc_plf_tlm/chi_icn_plf_packup",
         "COF_SCL_PATH": "/tmp/localdisk/qianche1/cof-pack/cof-scl-isim-9.0.0_nolic"
-    },
-    "chi_icn_plf_packup/chi_icn_plf_packup/models/chi_icn_plf_packupPlf.cf_plf_dg": [
-        {
-            "buildName": "chi_icn_plf_packupPlf.cf_plf_dgBuild_0",
-            "fastBuild": true,
-            "buildMode": "release",
-            "compiler": "gcc",
-            "sclProfile": "",
-            "parallelBuild": true,
-            "includePaths": [],
-            "sourceLocations": [],
-            "libPaths": [],
-            "libs": [],
-            "symbols": [],
-            "CXXFLAGS": [],
-            "LDFLAGS": [],
-            "preBuild": "",
-            "postBuild": "",
-            "active": true,
-            "conanBuild": false,
-            "conanPackages": [],
-            "isim": {
-                "enableISIM": false,
-                "simicsClassName": "",
-                "EXTRA_MODULE_PATH": []
-            }
-        }
-    ]
+    }
 }

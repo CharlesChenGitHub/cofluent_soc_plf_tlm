@@ -2,13 +2,20 @@
     "chi_icn_plf_packup/chi_icn_plf_packup/models/chi_icn_plf_packupPlf.cf_plf": [
         {
             "buildName": "chi_icn_plf_packupPlf.cf_plfBuild_0",
-            "fastBuild": true,
+            "fastBuild": false,
             "buildMode": "release",
             "compiler": "gcc",
             "sclProfile": "",
             "parallelBuild": true,
-            "includePaths": [],
-            "sourceLocations": [],
+            "includePaths": [
+                "${PROJECT_FOLDER}/external/include",
+                "${PROJECT_FOLDER}/external/include/chi",
+                "${PROJECT_FOLDER}/external/include/chi/tlm-modules"
+            ],
+            "sourceLocations": [
+                "${PROJECT_FOLDER}/external/src",
+                "${PROJECT_FOLDER}/chi_icn_plf_packup/gen-sysc/chi_icn_plf_packupPlf/src"
+            ],
             "libPaths": [],
             "libs": [],
             "symbols": [],
@@ -81,7 +88,7 @@
         "busInheritedConstructors": "cf_bus(name)"
     },
     "CofSetting.Path.Variables": {
-        "PROJECT_FOLDER": "/home/netura/cof-workspace/chi_icn_plf_packup",
-        "COF_SCL_PATH": "/home/netura/cof-pack/cof-scl-isim-9.0.2-220706_nolic"
+        "PROJECT_FOLDER": "/nfs/site/home/qianche1/scci71077_tmp/cofluent_soc_plf_tlm/chi_icn_plf_packup",
+        "COF_SCL_PATH": "/tmp/localdisk/qianche1/cof-pack/cof-scl-isim-9.0.0_nolic"
     }
 }

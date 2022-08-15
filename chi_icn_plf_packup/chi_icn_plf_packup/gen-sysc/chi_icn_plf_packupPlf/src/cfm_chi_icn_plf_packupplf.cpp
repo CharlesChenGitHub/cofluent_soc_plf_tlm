@@ -17,7 +17,8 @@ using namespace cf_core;
 //Start of 'chi_icn_plf_packupPlf definitions' algorithm generated code
 //connect RN-icn
 //RN.rnf.port <-bind-> icn.port_RN_F[0]->socket
-void customized_soc_bind(cfm_chi_icn& TLMBus, cfm_tg_rnf* TLMInitiator, int i) {
+void customized_soc_bind(cfm_chi_icn_tlm& TLMBus, cfm_tg_rnf_tlm* TLMInitiator,
+		int i) {
 	//(TLMInitiator->socket).bind(*(TLMBus.t_sk[0]));
 	(TLMInitiator->rnf)->port.txreq_init_socket.bind(
 			(TLMBus.port_RN_F[i])->rxreq_tgt_socket);
@@ -37,7 +38,7 @@ void customized_soc_bind(cfm_chi_icn& TLMBus, cfm_tg_rnf* TLMInitiator, int i) {
 //connect SN(memory)-icn
 //SN.socket <-bind-> icn.port_SN[0]->socket
 //mem_sn(cfm_mem_SN <-SlaveNode_F)  SlaveNode_F.sockets
-void customized_soc_bind(cfm_chi_icn& TLMBus, cfm_mem_sn* TLMMemory) {
+void customized_soc_bind(cfm_chi_icn_tlm& TLMBus, cfm_sn_tlm* TLMMemory) {
 	//TLMBus.memmap(0x40000000ULL, 0x100 - 1,ADDRMODE_RELATIVE, -1, TLMMemory->init_socket);
 	TLMMemory->txrsp_init_socket.bind((TLMBus.port_SN)->rxrsp_tgt_socket);
 	TLMMemory->txdat_init_socket.bind((TLMBus.port_SN)->rxdat_tgt_socket);
@@ -45,8 +46,15 @@ void customized_soc_bind(cfm_chi_icn& TLMBus, cfm_mem_sn* TLMMemory) {
 	(TLMBus.port_SN)->txreq_init_socket.bind(TLMMemory->rxreq_tgt_socket);
 	(TLMBus.port_SN)->txdat_init_socket.bind(TLMMemory->rxdat_tgt_socket);
 
-	TLMMemory->init_socket(TLMMemory->mem.socket);
+	//TLMMemory->init_socket(TLMMemory->mem.socket);
 }
+/*
+ void cfm_connector_st::bind(cfm_mem_tlm* mem_tlm,cfm_sn_tlm* sn_tlm ){
+ //sn_tlm->init_socket(mem_tlm->socket);
+ sn_tlm->init_socket.bind(mem_tlm->socket);
+
+ }
+ */
 //End of 'chi_icn_plf_packupPlf definitions' algorithm generated code
 //<#!@READ-ONLY-SECTION-START@!#>
 
@@ -54,43 +62,56 @@ void customized_soc_bind(cfm_chi_icn& TLMBus, cfm_mem_sn* TLMMemory) {
 //@{
 cfm_chi_icn_plf_packupplf::cfm_chi_icn_plf_packupplf(
 		sc_core::sc_module_name name) :
-		cf_platform(name), bus_CHI_ICN("CHI_ICN") {
+		cf_platform(name), bus_CHI_ICN_TLM("CHI_ICN_TLM"), bus_connector_st(
+				"connector_st") {
 	cf_platform::init();
 
-	mem_sn = new cfm_mem_sn("mem_sn");
+	mem_tlm = new cfm_mem_tlm("mem_tlm");
 	// processor after active callback
-	CF_PROC_CB_AFTER_ACTIVE((*mem_sn),
-			cfm_mem_sn::itc_proc_mem_sn_cb_after_active);
+	CF_PROC_CB_AFTER_ACTIVE((*mem_tlm),
+			cfm_mem_tlm::itc_proc_mem_tlm_cb_after_active);
 
 	// processor after inactive callback
-	CF_PROC_CB_AFTER_INACTIVE((*mem_sn),
-			cfm_mem_sn::itc_proc_mem_sn_cb_after_inactive);
+	CF_PROC_CB_AFTER_INACTIVE((*mem_tlm),
+			cfm_mem_tlm::itc_proc_mem_tlm_cb_after_inactive);
+	sn_tlm = new cfm_sn_tlm("sn_tlm");
+	// processor after active callback
+	CF_PROC_CB_AFTER_ACTIVE((*sn_tlm),
+			cfm_sn_tlm::itc_proc_sn_tlm_cb_after_active);
 
-	// instantiation of tg_rnf_vec
+	// processor after inactive callback
+	CF_PROC_CB_AFTER_INACTIVE((*sn_tlm),
+			cfm_sn_tlm::itc_proc_sn_tlm_cb_after_inactive);
+
+	// instantiation of tg_rnf_tlm_vec
 	for (cf_count i = 0; i < (cf_count) 2; i++) {
-		cfm_tg_rnf* module = new cfm_tg_rnf(cf_string("tg_rnf[%d]", i).c_str());
+		cfm_tg_rnf_tlm* module = new cfm_tg_rnf_tlm(
+				cf_string("tg_rnf_tlm[%d]", i).c_str());
 		CF_ASSERT (module)
-		tg_rnf_vec.push_back(module);
+		tg_rnf_tlm_vec.push_back(module);
 	}
 	for (cf_count i = 0; i < (cf_count) 2; i++) {
 		// processor after active callback
-		CF_PROC_CB_AFTER_ACTIVE((*tg_rnf_vec[i]),
-				cfm_tg_rnf::itc_proc_tg_rnf_cb_after_active);
+		CF_PROC_CB_AFTER_ACTIVE((*tg_rnf_tlm_vec[i]),
+				cfm_tg_rnf_tlm::itc_proc_tg_rnf_tlm_cb_after_active);
 
 		// processor after inactive callback
-		CF_PROC_CB_AFTER_INACTIVE((*tg_rnf_vec[i]),
-				cfm_tg_rnf::itc_proc_tg_rnf_cb_after_inactive);
+		CF_PROC_CB_AFTER_INACTIVE((*tg_rnf_tlm_vec[i]),
+				cfm_tg_rnf_tlm::itc_proc_tg_rnf_tlm_cb_after_inactive);
 	}
 	// connections
-	//CHI_ICN is not streaming connection 
+	//model: mem_tlm's connector_st is straming interface 
+	//CHI_ICN_TLM is not streaming connection 
 
-	customized_soc_bind(bus_CHI_ICN, mem_sn);	//SoC TLM2 mono instance
+	customized_soc_bind(bus_CHI_ICN_TLM, sn_tlm);	//SoC TLM2 mono instance
+	//model: sn_tlm's connector_st is straming interface 
+	bus_connector_st.bind(mem_tlm, sn_tlm);
 	for (cf_count i = 0; i < (cf_count) 2; i++) {
-		cfm_tg_rnf* module = tg_rnf_vec[i];
+		cfm_tg_rnf_tlm* module = tg_rnf_tlm_vec[i];
 		if (module != nullptr) {
-			//CHI_ICN is not streaming connection 
+			//CHI_ICN_TLM is not streaming connection 
 
-			customized_soc_bind(bus_CHI_ICN, tg_rnf_vec[i], i);	//SoC TLM2 multiple instance
+			customized_soc_bind(bus_CHI_ICN_TLM, tg_rnf_tlm_vec[i], i);	//SoC TLM2 multiple instance
 		}
 	}
 
@@ -112,11 +133,12 @@ cfm_chi_icn_plf_packupplf::~cfm_chi_icn_plf_packupplf(void) {
 
 	//End of 'chi_icn_plf_packupPlf destructor' algorithm generated code
 	//<#!@READ-ONLY-SECTION-START@!#>
-	for (vector<cfm_tg_rnf*>::const_iterator vi = tg_rnf_vec.begin();
-			vi != tg_rnf_vec.end(); vi++) {
+	for (vector<cfm_tg_rnf_tlm*>::const_iterator vi = tg_rnf_tlm_vec.begin();
+			vi != tg_rnf_tlm_vec.end(); vi++) {
 		delete (*vi);
 	}
-	delete mem_sn;
+	delete mem_tlm;
+	delete sn_tlm;
 }
 //@}
 

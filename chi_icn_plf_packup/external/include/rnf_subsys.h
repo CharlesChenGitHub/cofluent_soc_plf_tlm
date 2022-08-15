@@ -200,7 +200,7 @@ public:
 	{		
 		
 
-		if(strcmp(name, "tg_rnf[0]") == 0){
+		if(strcmp(name, "tg_rnf_tlm[0]") == 0){
 			RandomTraffic *tmp = new RandomTraffic(0, RAM_SIZE, (~(0x3llu)),
 				1, RAM_SIZE, RAM_SIZE, NUM_TXNS_RNF0);
 			rand_traffic = *tmp;
@@ -209,7 +209,7 @@ public:
 			rnf->GetTrafficGenerator().addTransfers(xfers, 0, NULL);
 			rnf->GetTrafficGenerator().enableDebug();
 		}
-		else if(strcmp(name, "tg_rnf[1]") == 0){
+		else if(strcmp(name, "tg_rnf_tlm[1]") == 0){
 			RandomTraffic *tmp = new RandomTraffic(0, RAM_SIZE, (~(0x3llu)),
 				1, RAM_SIZE, RAM_SIZE, NUM_TXNS_RNF1);
 			rand_traffic = *tmp;

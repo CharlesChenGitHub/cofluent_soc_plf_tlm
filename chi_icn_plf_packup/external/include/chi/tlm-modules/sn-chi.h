@@ -51,7 +51,7 @@ using namespace cf_core;
 #include "tlm-extensions/chiattr.h"
 #include "tlm-bridges/amba-chi.h"
 #include "tlm-modules/private/chi/txnids.h"
-#include "memory.h"
+//#include "memory.h"
 
 using namespace AMBA::CHI;
 
@@ -1219,7 +1219,7 @@ public:
 
 	tlm_utils::simple_initiator_socket<SlaveNode_F> txrsp_init_socket;
 	tlm_utils::simple_initiator_socket<SlaveNode_F> txdat_init_socket;
-	memory mem;
+	//memory mem;
 
 	//SC_HAS_PROCESS(SlaveNode_F);
 	//SC_CTOR(mem_sn)
@@ -1247,7 +1247,7 @@ public:
 
 		init_socket("init_socket"),
 
-		mem("mem", sc_time(10, SC_NS), 32*64),
+		//mem("mem", sc_time(10, SC_NS), 32*64),
 		
 		rxreq_tgt_socket("rxreq_tgt_socket"),
 		rxdat_tgt_socket("rxdat_tgt_socket"),

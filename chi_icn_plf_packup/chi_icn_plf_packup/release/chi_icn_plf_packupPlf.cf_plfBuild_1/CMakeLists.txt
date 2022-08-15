@@ -20,8 +20,8 @@ SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++11 -O2 -Wall -fmessage-length=
 SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=gnu++11 -O2 -Wall -fmessage-length=100 -fexceptions -pthread -fpermissive ")
 SET(CMAKE_CXX_LINK_FLAGS "${CMAKE_CXX_LINK_FLAGS} -pthread ")
 
-SET(PROJECT_FOLDER "/home/netura/cof-workspace/chi_icn_plf_packup")
-SET(COF_SCL_PATH "/home/netura/cof-pack/cof-scl-isim-9.0.2-220706_nolic")
+SET(PROJECT_FOLDER "/nfs/site/home/qianche1/scci71077_tmp/cofluent_soc_plf_tlm/chi_icn_plf_packup")
+SET(COF_SCL_PATH "/tmp/localdisk/qianche1/cof-pack/cof-scl-isim-9.0.0_nolic")
 
 
 SET(CMAKE_VERBOSE_MAKEFILE ON)

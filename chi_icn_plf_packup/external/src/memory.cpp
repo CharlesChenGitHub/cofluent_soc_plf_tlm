@@ -13,6 +13,7 @@ using namespace std;
 
 #include "memory.h"
 
+/*
 memory::memory(sc_module_name name, sc_time latency, off_t size_,
 	       uint8_t *buf)
 	: sc_module(name), socket("socket"), LATENCY(latency),
@@ -31,7 +32,7 @@ memory::memory(sc_module_name name, sc_time latency, off_t size_,
 		free_mem = true;
 	}
 }
-
+*/
 memory::~memory()
 {
 	if (free_mem) {

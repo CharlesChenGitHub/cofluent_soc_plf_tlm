@@ -21,13 +21,15 @@
 ///
 ///    - \subpage dxpchi_icn_plf_packupPlf "Function chi_icn_plf_packupPlf"
 ///
-///    - \subpage dxptg_rnf "Function tg_rnf"
+///    - \subpage dxptg_rnf_tlm "Function tg_rnf_tlm"
 ///
-///    - \subpage dxpMI "Function MI"
+///    - \subpage dxprnf_tlm "Function rnf_tlm"
 ///
-///    - \subpage dxpmem_sn "Function mem_sn"
+///    - \subpage dxpsn_tlm "Function sn_tlm"
 ///
-///    - \subpage dxpSI "Function SI"
+///    - \subpage dxpsnf_tlm "Function snf_tlm"
+///
+///    - \subpage dxpmem_tlm "Function mem_tlm"
 ///
 ///
 /// Intel(R) CoFluent(TM) Studio - Intel Corporation

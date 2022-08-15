@@ -15,9 +15,11 @@
 #include "cfm_chi_icn_plf_packupplf_global_types.h"
 #include "cofluent.h"
 
-#include "cfm_chi_icn.h"
-#include "cfm_mem_sn.h"
-#include "cfm_tg_rnf.h"
+#include "cfm_chi_icn_tlm.h"
+#include "cfm_connector_st.h"
+#include "cfm_mem_tlm.h"
+#include "cfm_sn_tlm.h"
+#include "cfm_tg_rnf_tlm.h"
 
 //<#!@READ-ONLY-SECTION-END@!#>
 //Start of 'chi_icn_plf_packupPlf includes' algorithm generated code
@@ -48,8 +50,9 @@ public:
 public:
 	/// \name components
 	//@{
-	cfm_mem_sn* mem_sn;
-	std::vector<cfm_tg_rnf*> tg_rnf_vec;
+	cfm_mem_tlm* mem_tlm;
+	cfm_sn_tlm* sn_tlm;
+	std::vector<cfm_tg_rnf_tlm*> tg_rnf_tlm_vec;
 	//@}
 
 protected:
@@ -61,7 +64,8 @@ protected:
 public:
 	/// \name relations
 	//@{
-	cfm_chi_icn bus_CHI_ICN;
+	cfm_chi_icn_tlm bus_CHI_ICN_TLM;
+	cfm_connector_st bus_connector_st;
 	//@}
 
 	/// Model private fields start

@@ -20,7 +20,7 @@ SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++11 -O2 -Wall -fmessage-length=
 SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=gnu++11 -O2 -Wall -fmessage-length=100 -fexceptions -pthread -fpermissive ")
 SET(CMAKE_CXX_LINK_FLAGS "${CMAKE_CXX_LINK_FLAGS} -pthread ")
 
-SET(PROJECT_FOLDER "/home/netura/cof-workspace/chi_icn_plf_packup")
+SET(PROJECT_FOLDER "/home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_plf_packup")
 SET(COF_SCL_PATH "/home/netura/cof-pack/cof-scl-isim-9.0.2-220706_nolic")
 
 
@@ -36,19 +36,11 @@ INCLUDE(
 
 # Header directories
 INCLUDE_DIRECTORIES(
-    "/home/netura/cof-workspace/chi_icn_plf_packup/chi_icn_plf_packup/gen-sysc/chi_icn_plf_packupPlf/include"
-    "/home/netura/cof-workspace/chi_icn_plf_packup/external/include"
-
-
-    "/home/netura/cof-workspace/chi_icn_plf_packup/external/include/chi"
-    "/home/netura/cof-workspace/chi_icn_plf_packup/external/include/chi/tlm-modules"
-    "/home/netura/cof-workspace/chi_icn_plf_packup/external/include/chi/tlm-bridges"
-    "/home/netura/cof-workspace/chi_icn_plf_packup/external/include/chi/tlm-extensions"
-    "/home/netura/cof-workspace/chi_icn_plf_packup/external/include/traffic-generators"
-    "/home/netura/cof-workspace/chi_icn_plf_packup/external/include/chi/tlm-modules/private/ccix"
-    "/home/netura/cof-workspace/chi_icn_plf_packup/external/include/chi/tlm-modules/private/chi"
-
-
+    "/home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_plf_packup/chi_icn_plf_packup/gen-sysc/chi_icn_plf_packupPlf/include"
+    "${PROJECT_FOLDER}/external/include"
+    "${PROJECT_FOLDER}/external/include/chi"
+    "${PROJECT_FOLDER}/external/include/chi/tlm-modules"
+    "/home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_plf_packup/external/include"
     "/home/netura/cof-pack/cof-scl-isim-9.0.2-220706_nolic/include/cofluent"
     "/home/netura/cof-pack/cof-scl-isim-9.0.2-220706_nolic/include/cofluent_isim"
     "/home/netura/cof-pack/cof-scl-isim-9.0.2-220706_nolic/include/isim-attrs-interface"
@@ -57,13 +49,10 @@ INCLUDE_DIRECTORIES(
 
 # Library directories
 LINK_DIRECTORIES(
-    "/home/netura/cof-workspace/chi_icn_plf_packup/external/lib"
+	"/home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_plf_packup/external/lib"
     "/home/netura/cof-pack/cof-scl-isim-9.0.2-220706_nolic/lib/${COFS_LIBS_PATH_FOR_GCC}"
     "/home/netura/cof-pack/cof-scl-isim-9.0.2-220706_nolic/lib"
 )
-
-aux_source_directory("/home/netura/cof-workspace/chi_icn_plf_packup/chi_icn_plf_packup/gen-sysc/chi_icn_plf_packupPlf/src" COFS_SOURCES)
-aux_source_directory("/home/netura/cof-workspace/chi_icn_plf_packup/external/src" COFS_SOURCES)
 
 # Library directories
 ADD_EXECUTABLE(

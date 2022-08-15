@@ -190,7 +190,7 @@ public:
 	RequestNode_F(sc_core::sc_module_name name, T& transfers) :
 		sc_module(name),
 		port("port-RN-F"),
-		m_gen("gen", 1),
+		m_gen("gen", 1), //traffic generator
 		m_cache("cache_chi")
 	{
 		// Configure generator

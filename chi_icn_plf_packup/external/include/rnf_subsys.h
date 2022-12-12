@@ -158,7 +158,7 @@ static TrafficDesc xfers(merge({
 	AtomicCompare(LINE(27)+8, DATA(0x0, 0x0, 0xFF, 0xFF), 4),
 		Expect(DATA(0x00, 0x00), 2),
 
-	ExclusiveLoad(LINE(26), 4),
+	ExclusiveLoad(LINE(26), 4),//[100300 ns]
 	ExclusiveStore(LINE(26), DATA(0x1, 0x2, 0x3, 0x4)),
 	Read(LINE(26), 4),
 		Expect(DATA(0x1, 0x2, 0x3, 0x4), 4),

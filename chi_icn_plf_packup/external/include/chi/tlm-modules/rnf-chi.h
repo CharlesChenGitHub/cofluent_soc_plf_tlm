@@ -194,8 +194,7 @@ public:
 		m_cache("cache_chi")
 	{
 		// Configure generator
-		m_gen.addTransfers(transfers, 0);
-
+		m_gen.addTransfers(transfers, 0); //add predetermined transfer to traffic generator
 		ConnectSockets();
 	}
 

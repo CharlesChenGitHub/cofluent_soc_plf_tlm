@@ -1693,6 +1693,8 @@ private:
 		{
 			while (true) {
 				sc_time delay(SC_ZERO_TIME);
+				//sc_time delay = sc_time(1, SC_NS);
+				//wait(sc_time(1, SC_NS));
 				IMsg *t;
 
 				if (m_txList.empty()) {

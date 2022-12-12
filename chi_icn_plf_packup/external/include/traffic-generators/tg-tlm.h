@@ -39,7 +39,7 @@ using namespace std;
 #include "data-transfer.h"
 #include "itraffic-desc.h"
 
-SC_MODULE(TLMTrafficGenerator)
+SC_MODULE(TLMTrafficGenerator)//substitude by riscv-vp
 {
 	typedef void (*DoneCallback)(TLMTrafficGenerator *gen, int threadID);
 

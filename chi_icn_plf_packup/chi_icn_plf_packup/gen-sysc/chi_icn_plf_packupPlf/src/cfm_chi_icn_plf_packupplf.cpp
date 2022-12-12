@@ -15,25 +15,6 @@ using namespace cf_core;
 
 //<#!@READ-ONLY-SECTION-END@!#>
 //Start of 'chi_icn_plf_packupPlf definitions' algorithm generated code
-//connect RN-icn
-//RN.rnf.port <-bind-> icn.port_RN_F[0]->socket
-void customized_soc_bind(cfm_chi_icn_tlm& TLMBus, cfm_tg_rnf_tlm* TLMInitiator,
-		int i) {
-	//(TLMInitiator->socket).bind(*(TLMBus.t_sk[0]));
-	(TLMInitiator->rnf)->port.txreq_init_socket.bind(
-			(TLMBus.port_RN_F[i])->rxreq_tgt_socket);
-	(TLMInitiator->rnf)->port.txrsp_init_socket.bind(
-			(TLMBus.port_RN_F[i])->rxrsp_tgt_socket);
-	(TLMInitiator->rnf)->port.txdat_init_socket.bind(
-			(TLMBus.port_RN_F[i])->rxdat_tgt_socket);
-
-	(TLMBus.port_RN_F[i])->txrsp_init_socket.bind(
-			(TLMInitiator->rnf)->port.rxrsp_tgt_socket);
-	(TLMBus.port_RN_F[i])->txdat_init_socket.bind(
-			(TLMInitiator->rnf)->port.rxdat_tgt_socket);
-	(TLMBus.port_RN_F[i])->txsnp_init_socket.bind(
-			(TLMInitiator->rnf)->port.rxsnp_tgt_socket);
-}
 
 //connect SN(memory)-icn
 //SN.socket <-bind-> icn.port_SN[0]->socket
@@ -55,6 +36,23 @@ void customized_soc_bind(cfm_chi_icn_tlm& TLMBus, cfm_sn_tlm* TLMMemory) {
 
  }
  */
+//bind bridge_rn with chi-icn
+void customized_soc_bind(cfm_chi_icn_tlm& TLMBus, cfm_bridge_rn* bridge_rn) {
+	(bridge_rn->cache).txreq_init_socket.bind(
+			(TLMBus.port_RN_F[0])->rxreq_tgt_socket);
+	(bridge_rn->cache).txrsp_init_socket.bind(
+			(TLMBus.port_RN_F[0])->rxrsp_tgt_socket);
+	(bridge_rn->cache).txdat_init_socket.bind(
+			(TLMBus.port_RN_F[0])->rxdat_tgt_socket);
+
+	(TLMBus.port_RN_F[0])->txrsp_init_socket.bind(
+			(bridge_rn->cache).rxrsp_tgt_socket);
+	(TLMBus.port_RN_F[0])->txdat_init_socket.bind(
+			(bridge_rn->cache).rxdat_tgt_socket);
+	(TLMBus.port_RN_F[0])->txsnp_init_socket.bind(
+			(bridge_rn->cache).rxsnp_tgt_socket);
+
+}
 //End of 'chi_icn_plf_packupPlf definitions' algorithm generated code
 //<#!@READ-ONLY-SECTION-START@!#>
 
@@ -62,10 +60,18 @@ void customized_soc_bind(cfm_chi_icn_tlm& TLMBus, cfm_sn_tlm* TLMMemory) {
 //@{
 cfm_chi_icn_plf_packupplf::cfm_chi_icn_plf_packupplf(
 		sc_core::sc_module_name name) :
-		cf_platform(name), bus_CHI_ICN_TLM("CHI_ICN_TLM"), bus_connector_st(
-				"connector_st") {
+		cf_platform(name), bus_CHI_ICN_TLM("CHI_ICN_TLM"), bus_connector_st1(
+				"connector_st1"), bus_connector_st2("connector_st2") {
 	cf_platform::init();
 
+	bridge_rn = new cfm_bridge_rn("bridge_rn");
+	// processor after active callback
+	CF_PROC_CB_AFTER_ACTIVE((*bridge_rn),
+			cfm_bridge_rn::itc_proc_bridge_rn_cb_after_active);
+
+	// processor after inactive callback
+	CF_PROC_CB_AFTER_INACTIVE((*bridge_rn),
+			cfm_bridge_rn::itc_proc_bridge_rn_cb_after_inactive);
 	mem_tlm = new cfm_mem_tlm("mem_tlm");
 	// processor after active callback
 	CF_PROC_CB_AFTER_ACTIVE((*mem_tlm),
@@ -74,6 +80,14 @@ cfm_chi_icn_plf_packupplf::cfm_chi_icn_plf_packupplf(
 	// processor after inactive callback
 	CF_PROC_CB_AFTER_INACTIVE((*mem_tlm),
 			cfm_mem_tlm::itc_proc_mem_tlm_cb_after_inactive);
+	riscv_vp = new cfm_riscv_vp("riscv_vp");
+	// processor after active callback
+	CF_PROC_CB_AFTER_ACTIVE((*riscv_vp),
+			cfm_riscv_vp::itc_proc_riscv_vp_cb_after_active);
+
+	// processor after inactive callback
+	CF_PROC_CB_AFTER_INACTIVE((*riscv_vp),
+			cfm_riscv_vp::itc_proc_riscv_vp_cb_after_inactive);
 	sn_tlm = new cfm_sn_tlm("sn_tlm");
 	// processor after active callback
 	CF_PROC_CB_AFTER_ACTIVE((*sn_tlm),
@@ -83,37 +97,19 @@ cfm_chi_icn_plf_packupplf::cfm_chi_icn_plf_packupplf(
 	CF_PROC_CB_AFTER_INACTIVE((*sn_tlm),
 			cfm_sn_tlm::itc_proc_sn_tlm_cb_after_inactive);
 
-	// instantiation of tg_rnf_tlm_vec
-	for (cf_count i = 0; i < (cf_count) 2; i++) {
-		cfm_tg_rnf_tlm* module = new cfm_tg_rnf_tlm(
-				cf_string("tg_rnf_tlm[%d]", i).c_str());
-		CF_ASSERT (module)
-		tg_rnf_tlm_vec.push_back(module);
-	}
-	for (cf_count i = 0; i < (cf_count) 2; i++) {
-		// processor after active callback
-		CF_PROC_CB_AFTER_ACTIVE((*tg_rnf_tlm_vec[i]),
-				cfm_tg_rnf_tlm::itc_proc_tg_rnf_tlm_cb_after_active);
-
-		// processor after inactive callback
-		CF_PROC_CB_AFTER_INACTIVE((*tg_rnf_tlm_vec[i]),
-				cfm_tg_rnf_tlm::itc_proc_tg_rnf_tlm_cb_after_inactive);
-	}
 	// connections
-	//model: mem_tlm's connector_st is straming interface 
+	//model: bridge_rn's connector_st1 is straming interface 
+	//CHI_ICN_TLM is not streaming connection 
+
+	customized_soc_bind(bus_CHI_ICN_TLM, bridge_rn);	//SoC TLM2 mono instance
+	//model: mem_tlm's connector_st2 is straming interface 
+	//model: riscv_vp's connector_st1 is straming interface 
+	bus_connector_st1.bind(bridge_rn, riscv_vp);
 	//CHI_ICN_TLM is not streaming connection 
 
 	customized_soc_bind(bus_CHI_ICN_TLM, sn_tlm);	//SoC TLM2 mono instance
-	//model: sn_tlm's connector_st is straming interface 
-	bus_connector_st.bind(mem_tlm, sn_tlm);
-	for (cf_count i = 0; i < (cf_count) 2; i++) {
-		cfm_tg_rnf_tlm* module = tg_rnf_tlm_vec[i];
-		if (module != nullptr) {
-			//CHI_ICN_TLM is not streaming connection 
-
-			customized_soc_bind(bus_CHI_ICN_TLM, tg_rnf_tlm_vec[i], i);	//SoC TLM2 multiple instance
-		}
-	}
+	//model: sn_tlm's connector_st2 is straming interface 
+	bus_connector_st2.bind(mem_tlm, sn_tlm);
 
 	//<#!@READ-ONLY-SECTION-END@!#>
 	//Start of 'chi_icn_plf_packupPlf constructor' algorithm generated code
@@ -133,11 +129,9 @@ cfm_chi_icn_plf_packupplf::~cfm_chi_icn_plf_packupplf(void) {
 
 	//End of 'chi_icn_plf_packupPlf destructor' algorithm generated code
 	//<#!@READ-ONLY-SECTION-START@!#>
-	for (vector<cfm_tg_rnf_tlm*>::const_iterator vi = tg_rnf_tlm_vec.begin();
-			vi != tg_rnf_tlm_vec.end(); vi++) {
-		delete (*vi);
-	}
+	delete bridge_rn;
 	delete mem_tlm;
+	delete riscv_vp;
 	delete sn_tlm;
 }
 //@}

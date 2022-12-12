@@ -29,7 +29,8 @@ public:
 	socket.register_get_direct_mem_ptr(this, &memory::get_direct_mem_ptr);
 	socket.register_transport_dbg(this, &memory::transport_dbg);
 
-	size = 32*64;
+	//size = 32*64;
+	size = 1024 * 1024 * 16 * 32;
 	if (mem == NULL) {
 		mem = new uint8_t[size];
 		memset(&mem[0], 0, size);

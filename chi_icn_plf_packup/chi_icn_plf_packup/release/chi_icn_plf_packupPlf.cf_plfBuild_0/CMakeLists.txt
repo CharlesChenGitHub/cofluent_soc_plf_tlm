@@ -16,42 +16,50 @@ else()
 endif()
 
 # Options
-SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++11 -O2 -Wall -fmessage-length=100 -frtti -fexceptions -pthread -fpermissive ")
-SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=gnu++11 -O2 -Wall -fmessage-length=100 -fexceptions -pthread -fpermissive ")
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++14 -O2 -Wall -fmessage-length=100 -frtti -fexceptions -pthread -fpermissive -g")
+SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=gnu++14 -O2 -Wall -fmessage-length=100 -fexceptions -pthread -fpermissive -g")
 SET(CMAKE_CXX_LINK_FLAGS "${CMAKE_CXX_LINK_FLAGS} -pthread ")
 
-SET(PROJECT_FOLDER "/home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_plf_packup")
-SET(COF_SCL_PATH "/home/netura/cof-pack/cof-scl-isim-9.0.2-220706_nolic")
+SET(PROJECT_FOLDER "/home/sunjiaqi/cof-workspace/cofluent_soc_plf_tlm/chi_icn_plf_packup")
+SET(COF_SCL_PATH "/home/sunjiaqi/cof-pack/cof-scl-isim-9.1.0-221024_nolic")
 
 
 SET(CMAKE_VERBOSE_MAKEFILE ON)
 # Definitions
 add_definitions(-DCOFS_MODEL_TYPE_APPLICATION_MODELING=COFS_MODEL_TYPE_APPLICATION_MODELING)
 add_definitions(-DCOFS_SOURCE_CODEGEN_SYSTEMC=COFS_SOURCE_CODEGEN_SYSTEMC)
-
+add_definitions(-DSC_CPLUSPLUS=201103L)
 
 INCLUDE(
     ListOfSources.cmake
 )
 
+find_package(Boost REQUIRED COMPONENTS iostreams)
+
 # Header directories
 INCLUDE_DIRECTORIES(
-    "/home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_plf_packup/chi_icn_plf_packup/gen-sysc/chi_icn_plf_packupPlf/include"
+    "/home/sunjiaqi/cof-workspace/cofluent_soc_plf_tlm/chi_icn_plf_packup/chi_icn_plf_packup/gen-sysc/chi_icn_plf_packupPlf/include"
     "${PROJECT_FOLDER}/external/include"
     "${PROJECT_FOLDER}/external/include/chi"
     "${PROJECT_FOLDER}/external/include/chi/tlm-modules"
-    "/home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_plf_packup/external/include"
-    "/home/netura/cof-pack/cof-scl-isim-9.0.2-220706_nolic/include/cofluent"
-    "/home/netura/cof-pack/cof-scl-isim-9.0.2-220706_nolic/include/cofluent_isim"
-    "/home/netura/cof-pack/cof-scl-isim-9.0.2-220706_nolic/include/isim-attrs-interface"
-    "/home/netura/cof-pack/cof-scl-isim-9.0.2-220706_nolic/include/systemc"
+    "${PROJECT_FOLDER}/external/include/riscv-vp/rv32"
+    "${PROJECT_FOLDER}/external/include/riscv-vp/common"
+    "${PROJECT_FOLDER}/external/include/riscv-vp/softfloat-dist/include/softfloat"
+    "/home/sunjiaqi/cof-workspace/cofluent_soc_plf_tlm/chi_icn_plf_packup/external/include"
+    "/home/sunjiaqi/cof-pack/cof-scl-isim-9.1.0-221024_nolic/include/cofluent"
+    "/home/sunjiaqi/cof-pack/cof-scl-isim-9.1.0-221024_nolic/include/cofluent_isim"
+    "/home/sunjiaqi/cof-pack/cof-scl-isim-9.1.0-221024_nolic/include/isim-attrs-interface"
+    "/home/sunjiaqi/cof-pack/cof-scl-isim-9.1.0-221024_nolic/include/systemc"
+    ${Boost_INCLUDE_DIRS}
 )
 
 # Library directories
 LINK_DIRECTORIES(
-	"/home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_plf_packup/external/lib"
-    "/home/netura/cof-pack/cof-scl-isim-9.0.2-220706_nolic/lib/${COFS_LIBS_PATH_FOR_GCC}"
-    "/home/netura/cof-pack/cof-scl-isim-9.0.2-220706_nolic/lib"
+	"${PROJECT_FOLDER}/external/lib"
+    "/home/sunjiaqi/cof-workspace/cofluent_soc_plf_tlm/chi_icn_plf_packup/external/lib"
+    "/home/sunjiaqi/cof-pack/cof-scl-isim-9.1.0-221024_nolic/lib/${COFS_LIBS_PATH_FOR_GCC}"
+    "/home/sunjiaqi/cof-pack/cof-scl-isim-9.1.0-221024_nolic/lib"
+    ${Boost_LINK_DIRS}
 )
 
 # Library directories
@@ -70,6 +78,8 @@ TARGET_LINK_LIBRARIES(
     stdc++
     dl
     rt
+    softfloat
+    ${Boost_LIBRARIES}
 )
 
 SET_TARGET_PROPERTIES(chi_icn_plf_packupPlf PROPERTIES SUFFIX ".exe")

@@ -2780,6 +2780,7 @@ private:
 		void tx_thread()
 		{
 			while (true) {
+				//wait(sc_time(1, SC_NS));
 				//
 				// Check if something is queued for tx
 				//

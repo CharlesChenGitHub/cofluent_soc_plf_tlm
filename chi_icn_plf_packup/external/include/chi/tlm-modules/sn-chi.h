@@ -537,6 +537,9 @@ private:
 		{
 			while (true) {
 				sc_time delay(SC_ZERO_TIME);
+				//sc_time delay = sc_time(1, SC_NS);
+				//wait(sc_time(1, SC_NS));
+				
 				IMsg *msg;
 
 				if (m_txList.empty()) {
@@ -908,7 +911,7 @@ private:
 			while (true) {
 				sc_time delay(SC_ZERO_TIME);
 				ReqTxn *req;
-
+				//wait(sc_time(1, SC_NS));
 				if (m_txList.empty()) {
 					wait(m_listEvent);
 				}

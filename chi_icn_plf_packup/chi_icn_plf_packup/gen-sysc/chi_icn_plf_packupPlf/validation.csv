@@ -1,2 +1,2 @@
-WARNING,,A processor connected to a bus should contain at least one component.,,_Vzuy-hAzRXUc1NvJP0B2-1,,chi_icn_plf_packupPlf::chi_icn_plf_packupPlfSt::mem_tlm,,home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_plf_packup/chi_icn_plf_packup/models/chi_icn_plf_packupPlf.cf_plf
-OK,,fakeMessage,,fakeId,,fakeLocation,,home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_plf_packup/chi_icn_plf_packup/models/chi_icn_plf_packupPlf.cf_plf
+WARNING,,A processor connected to a bus should contain at least one component.,,_Vzuy-hAzRXUc1NvJP0B2-1,,chi_icn_plf_packupPlf::chi_icn_plf_packupPlfSt::mem_tlm,,home/sunjiaqi/cof-workspace/cofluent_soc_plf_tlm/chi_icn_plf_packup/chi_icn_plf_packup/models/chi_icn_plf_packupPlf.cf_plf
+OK,,fakeMessage,,fakeId,,fakeLocation,,home/sunjiaqi/cof-workspace/cofluent_soc_plf_tlm/chi_icn_plf_packup/chi_icn_plf_packup/models/chi_icn_plf_packupPlf.cf_plf

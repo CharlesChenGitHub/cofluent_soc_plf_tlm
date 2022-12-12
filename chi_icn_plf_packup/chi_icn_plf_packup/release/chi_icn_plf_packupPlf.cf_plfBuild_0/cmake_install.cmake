@@ -1,4 +1,4 @@
-# Install script for directory: /home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_plf_packup/chi_icn_plf_packup/release/chi_icn_plf_packupPlf.cf_plfBuild_0
+# Install script for directory: /home/sunjiaqi/cof-workspace/cofluent_soc_plf_tlm/chi_icn_plf_packup/chi_icn_plf_packup/release/chi_icn_plf_packupPlf.cf_plfBuild_0
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/netura/cof-workspace/cofluent_soc_plf_tlm/chi_icn_plf_packup/chi_icn_plf_packup/release/chi_icn_plf_packupPlf.cf_plfBuild_0/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/sunjiaqi/cof-workspace/cofluent_soc_plf_tlm/chi_icn_plf_packup/chi_icn_plf_packup/release/chi_icn_plf_packupPlf.cf_plfBuild_0/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

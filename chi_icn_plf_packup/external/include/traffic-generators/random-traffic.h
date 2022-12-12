@@ -78,7 +78,7 @@ public:
 			return tlm::TLM_READ_COMMAND;
 		}
 
-		cmd = (rand_r(&m_seed) % 2) ?
+		cmd = (rand_r(&m_seed) % 2) ? //generate random command
 			tlm::TLM_WRITE_COMMAND : tlm::TLM_READ_COMMAND;
 
 		if (m_initMemory) {

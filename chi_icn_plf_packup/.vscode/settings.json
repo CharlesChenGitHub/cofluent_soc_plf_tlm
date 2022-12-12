@@ -1,3 +1,8 @@
 {
-    "cmake.configureOnOpen": false
+    "cmake.configureOnOpen": false,
+    "files.associations": {
+        "atomic": "cpp",
+        "*.tcc": "cpp",
+        "list": "cpp"
+    }
 }

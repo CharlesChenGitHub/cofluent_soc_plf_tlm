@@ -21,7 +21,7 @@
 ///
 ///    - \subpage dxpchi_icn_plf_packupPlf "Function chi_icn_plf_packupPlf"
 ///
-///    - \subpage dxptg_rnf_tlm "Function tg_rnf_tlm"
+///    - \subpage dxpriscv_vp "Function riscv_vp"
 ///
 ///    - \subpage dxprnf_tlm "Function rnf_tlm"
 ///
@@ -30,6 +30,10 @@
 ///    - \subpage dxpsnf_tlm "Function snf_tlm"
 ///
 ///    - \subpage dxpmem_tlm "Function mem_tlm"
+///
+///    - \subpage dxpbridge_rn "Function bridge_rn"
+///
+///    - \subpage dxpcache_chi "Function cache_chi"
 ///
 ///
 /// Intel(R) CoFluent(TM) Studio - Intel Corporation

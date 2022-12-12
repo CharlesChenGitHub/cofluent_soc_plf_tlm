@@ -2356,6 +2356,7 @@ private:
 		m_mutex.lock();
 
 		wait(delay);
+		wait(sc_time(1, SC_NS));
 		delay = SC_ZERO_TIME;
 
 		if (InNonShareableRegion(trans)) {

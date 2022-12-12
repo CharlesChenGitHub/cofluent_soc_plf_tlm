@@ -4,11 +4,11 @@
         "modelPath": "chi_icn_plf_packup/chi_icn_plf_packup/models/chi_icn_plf_packupPlf.cf_plf",
         "executionFilePath": "chi_icn_plf_packup/chi_icn_plf_packup/release/chi_icn_plf_packupPlf.cf_plfBuild_0/chi_icn_plf_packupPlf.exe",
         "generateTraceFile": false,
-        "simulationDuration": "20ms",
+        "simulationDuration": "1us",
         "enableAlgorithmProfiling": false,
         "enableArchitectureProfiling": false,
         "verbosityLevel": "info",
-        "args": "--cf-gui-connect=no --cf-gui-ip-address=127.0.0.1 --cf-gui-socket=39000 --cf-gui-time-scale=ns --cf-mon-config=file",
+        "args": "--cf-gui-connect=yes --cf-gui-ip-address=127.0.0.1 --cf-gui-socket=39000 --cf-gui-time-scale=ns --cf-mon-config=file",
         "active": true,
         "environment": "",
         "isim": {

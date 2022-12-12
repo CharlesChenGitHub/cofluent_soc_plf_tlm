@@ -9,17 +9,18 @@
 #define COFS_MODEL_CHI_ICN_PLF_PACKUPPLF_CHI_ICN_PLF_PACKUPPLF
 
 /// Model Header includes start
-#include <vector>
 
 #include "cfm_chi_icn_plf_packupplf_global.h"
 #include "cfm_chi_icn_plf_packupplf_global_types.h"
 #include "cofluent.h"
 
+#include "cfm_bridge_rn.h"
 #include "cfm_chi_icn_tlm.h"
-#include "cfm_connector_st.h"
+#include "cfm_connector_st1.h"
+#include "cfm_connector_st2.h"
 #include "cfm_mem_tlm.h"
+#include "cfm_riscv_vp.h"
 #include "cfm_sn_tlm.h"
-#include "cfm_tg_rnf_tlm.h"
 
 //<#!@READ-ONLY-SECTION-END@!#>
 //Start of 'chi_icn_plf_packupPlf includes' algorithm generated code
@@ -50,9 +51,10 @@ public:
 public:
 	/// \name components
 	//@{
+	cfm_bridge_rn* bridge_rn;
 	cfm_mem_tlm* mem_tlm;
+	cfm_riscv_vp* riscv_vp;
 	cfm_sn_tlm* sn_tlm;
-	std::vector<cfm_tg_rnf_tlm*> tg_rnf_tlm_vec;
 	//@}
 
 protected:
@@ -65,7 +67,8 @@ public:
 	/// \name relations
 	//@{
 	cfm_chi_icn_tlm bus_CHI_ICN_TLM;
-	cfm_connector_st bus_connector_st;
+	cfm_connector_st1 bus_connector_st1;
+	cfm_connector_st2 bus_connector_st2;
 	//@}
 
 	/// Model private fields start

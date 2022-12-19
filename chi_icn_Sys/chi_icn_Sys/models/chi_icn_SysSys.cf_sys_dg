@@ -40,7 +40,7 @@
 				},
 				"soCsimulationMode": {
 					"annotations": {
-						"defaultValue": "TLM2"
+						"defaultValue": "CoFluent"
 					}
 				},
 				"cyclePeriod": {
@@ -119,7 +119,7 @@
 				"name": {
 					"type": "EString",
 					"annotations": {
-						"defaultValue": "chi_icn_plf_packupPlf"
+						"defaultValue": "chi_icn_SysSys"
 					}
 				},
 				"documentation": {
@@ -128,16 +128,15 @@
 				}
 			},
 			"cof_eClassName": "Platform",
-			"id": "_rwfRVDLZhvYXA2u4yzsCpE",
-			"z": 0,
+			"id": "_Zfr4WdOamNlHDtoqJ6YV7P",
 			"fixSize": true,
 			"embeds": [
-				"_8Zaq43Xolz8OLfUazBB6WU"
+				"_War907w9qhzJtiVzgR9yI_"
 			],
 			"attrs": {
 				"label": {
 					"textWrap": {
-						"text": "chi_icn_plf_packupPlf"
+						"text": "chi_icn_SysSys"
 					}
 				},
 				".": {
@@ -158,19 +157,19 @@
 				}
 			],
 			"position": {
-				"x": 0,
-				"y": 48
+				"x": -133.99217224121094,
+				"y": 24
 			},
 			"size": {
-				"width": 100,
-				"height": 80
+				"width": 520,
+				"height": 493.0104217529297
 			},
 			"angle": 0,
 			"cof_attrs": {
 				"name": {
 					"type": "EString",
 					"annotations": {
-						"defaultValue": "chi_icn_plf_packupPlfSt"
+						"defaultValue": "chi_icn_SysSys"
 					}
 				},
 				"documentation": {
@@ -179,29 +178,23 @@
 				}
 			},
 			"cof_eClassName": "Structure",
-			"id": "_8Zaq43Xolz8OLfUazBB6WU",
-			"z": 1,
+			"id": "_War907w9qhzJtiVzgR9yI_",
 			"fixSize": true,
+			"parent": "_Zfr4WdOamNlHDtoqJ6YV7P",
 			"embeds": [
-				"_UTRFSnVBfUkTRyFUWlhnRT",
-				"_YXtbRWZhZTsWUndFV1QqdW",
-				"_FXlld19wY3RhC3odDX9Ybi",
-				"_Tm18bmZ7dhR9DhpJA1piNW",
-				"_N3d9eXFKWWFxCllZbUozZ2",
-				"_NXxZNn1ZfQ98cWVqCCFSZX",
-				"_Tbg04EyByTiuftGoSknSBv",
-				"_6xQvUlG7jSLnsshR65MYzc",
-				"_gskdxk9iZzhEXH8MfKDkur",
-				"_v9mqRyhZPWVdb5dtip11bo",
-				"_wILzpIlGzNGeR8n60BS3y2",
-				"_Vzuy-hAzRXUc1NvJP0B2-1",
-				"_CY8nuutXSdwvq02n6eOEUm"
+				"35aff496-d282-4c5d-8694-55741b6fadd0",
+				"_a6_723LHeelY3vegMx9VHA",
+				"_gv5fra8ZfODzn2eh3-ZEa7",
+				"_TrT--0v4oB12N80dxT0Ogo",
+				"_RQDREzlERFqICmmBBU45o0",
+				"__Ih4lsgmi8FA8sOLk-ImLp",
+				"_lxdA1-WSMgS_B7tBCgIPLH",
+				"_-pEsZBmzhLVQrOkuQt1jf0"
 			],
-			"parent": "_rwfRVDLZhvYXA2u4yzsCpE",
 			"attrs": {
 				"label": {
 					"textWrap": {
-						"text": "chi_icn_plf_packupPlfSt"
+						"text": "chi_icn_SysSys"
 					}
 				},
 				".": {
@@ -226,8 +219,8 @@
 				}
 			],
 			"position": {
-				"x": 431,
-				"y": 335
+				"x": -133.99217224121094,
+				"y": 250.0104217529297
 			},
 			"size": {
 				"width": 520,
@@ -429,9 +422,9 @@
 				}
 			},
 			"cof_eClassName": "Bus",
-			"id": "_Tbg04EyByTiuftGoSknSBv",
-			"z": 2,
-			"parent": "_8Zaq43Xolz8OLfUazBB6WU",
+			"id": "_a6_723LHeelY3vegMx9VHA",
+			"z": 1,
+			"parent": "_War907w9qhzJtiVzgR9yI_",
 			"attrs": {
 				"body": {
 					"refD": "m 0 0 l 16 -16 v 8 h 504 v -8 l 16 16 l -16 16 v -8 h -504 v 8 l -16 -16"
@@ -446,11 +439,11 @@
 		{
 			"type": "link",
 			"source": {
-				"id": "_NUOAXwLdJTfVFUepu-Utl7",
+				"id": "_BXH_-Z9HVPZKTdCf6mAyx7",
 				"port": "_dX9eTU1sTGJJYTMkHDc0bn"
 			},
 			"target": {
-				"id": "_Tbg04EyByTiuftGoSknSBv",
+				"id": "_a6_723LHeelY3vegMx9VHA",
 				"port": "_duCC6-p_bwYWf28GFn9vmY",
 				"anchor": {
 					"name": "topLeft",
@@ -484,35 +477,42 @@
 					}
 				}
 			},
-			"id": "_NXxZNn1ZfQ98cWVqCCFSZX",
-			"z": 3,
-			"parent": "_8Zaq43Xolz8OLfUazBB6WU",
+			"id": "9028dddb-cdf6-40ef-a81e-701b4b5650cb",
+			"z": 2,
 			"vertices": [
 				{
-					"x": 658,
-					"y": 399
+					"x": 93.00782775878906,
+					"y": 314.0104217529297
 				},
 				{
-					"x": 658,
-					"y": 399
+					"x": 93.00782775878906,
+					"y": 314.0104217529297
 				}
 			],
 			"pathPoints": [
 				{
-					"x": 658,
-					"y": 459
+					"x": 93.01,
+					"y": 374.01
 				},
 				{
-					"x": 658,
-					"y": 388
+					"x": 93.01,
+					"y": 314.0104217529297
 				},
 				{
-					"x": 651.96,
-					"y": 388
+					"x": 93.00782775878906,
+					"y": 314.0104217529297
 				},
 				{
-					"x": 651.96,
-					"y": 367
+					"x": 93.00782775878906,
+					"y": 303.01021087646484
+				},
+				{
+					"x": 86.97,
+					"y": 303.01021087646484
+				},
+				{
+					"x": 86.97,
+					"y": 282.01
 				}
 			],
 			"attrs": {
@@ -551,11 +551,11 @@
 		{
 			"type": "link",
 			"source": {
-				"id": "_Z7ktIVyi1hU3-4go3Flvil",
+				"id": "_JI7huS3E5TNeVR2VH7c9SK",
 				"port": "_dX9eTU1sTGJJYTMkHDc0bn"
 			},
 			"target": {
-				"id": "_Tbg04EyByTiuftGoSknSBv",
+				"id": "_a6_723LHeelY3vegMx9VHA",
 				"port": "_duCC6-p_bwYWf28GFn9vmY",
 				"anchor": {
 					"name": "topLeft",
@@ -589,35 +589,42 @@
 					}
 				}
 			},
-			"id": "_N3d9eXFKWWFxCllZbUozZ2",
-			"z": 4,
-			"parent": "_8Zaq43Xolz8OLfUazBB6WU",
+			"id": "553f0edf-1758-47a9-af6a-7f458c6148a4",
+			"z": 3,
 			"vertices": [
 				{
-					"x": 840,
-					"y": 324
+					"x": 275.00782775878906,
+					"y": 239.0104217529297
 				},
 				{
-					"x": 840,
-					"y": 324
+					"x": 275.00782775878906,
+					"y": 239.0104217529297
 				}
 			],
 			"pathPoints": [
 				{
-					"x": 840,
-					"y": 313
+					"x": 275.01,
+					"y": 228.01
 				},
 				{
-					"x": 840,
-					"y": 328.5
+					"x": 275.01,
+					"y": 239.0104217529297
 				},
 				{
-					"x": 822.76,
-					"y": 328.5
+					"x": 275.00782775878906,
+					"y": 239.0104217529297
 				},
 				{
-					"x": 822.76,
-					"y": 343
+					"x": 275.00782775878906,
+					"y": 243.51021087646484
+				},
+				{
+					"x": 257.77,
+					"y": 243.51021087646484
+				},
+				{
+					"x": 257.77,
+					"y": 258.01
 				}
 			],
 			"attrs": {
@@ -670,8 +677,8 @@
 				}
 			],
 			"position": {
-				"x": 748,
-				"y": 509
+				"x": 183,
+				"y": 423
 			},
 			"size": {
 				"width": 40,
@@ -875,9 +882,9 @@
 				}
 			},
 			"cof_eClassName": "Bus",
-			"id": "_6xQvUlG7jSLnsshR65MYzc",
-			"z": 5,
-			"parent": "_8Zaq43Xolz8OLfUazBB6WU",
+			"id": "_gv5fra8ZfODzn2eh3-ZEa7",
+			"z": 4,
+			"parent": "_War907w9qhzJtiVzgR9yI_",
 			"attrs": {
 				"label": {
 					"textWrap": {
@@ -889,16 +896,16 @@
 		{
 			"type": "link",
 			"source": {
-				"id": "_6bGfzt5JjT-8Vt5ltzLoqR",
+				"id": "_ObkX1MirNsVGrwwOvRFgPD",
 				"port": "_dX9eTU1sTGJJYTMkHDc0bn"
 			},
 			"target": {
-				"id": "_6xQvUlG7jSLnsshR65MYzc",
+				"id": "_gv5fra8ZfODzn2eh3-ZEa7",
 				"port": "_duCC6-p_bwYWf28GFn9vmY",
 				"anchor": {
 					"name": "topLeft",
 					"args": {
-						"dx": "40%",
+						"dx": "75.1%",
 						"dy": "100%",
 						"rotate": true
 					}
@@ -927,25 +934,24 @@
 					}
 				}
 			},
-			"id": "_Tm18bmZ7dhR9DhpJA1piNW",
-			"z": 6,
-			"parent": "_8Zaq43Xolz8OLfUazBB6WU",
+			"id": "df4add29-d49a-4a11-a3fd-102211d1bdd0",
+			"z": 5,
 			"pathPoints": [
 				{
-					"x": 709,
-					"y": 531
+					"x": 144.01,
+					"y": 446.01
 				},
 				{
-					"x": 727.5,
-					"y": 531
+					"x": 162.505,
+					"y": 446.01
 				},
 				{
-					"x": 727.5,
-					"y": 528.2
+					"x": 162.505,
+					"y": 445.01
 				},
 				{
-					"x": 756,
-					"y": 528.2
+					"x": 191,
+					"y": 445.01
 				}
 			],
 			"attrs": {
@@ -984,16 +990,16 @@
 		{
 			"type": "link",
 			"source": {
-				"id": "_clkxurMVo4y6sNn-cOkkbJ",
+				"id": "_Lh6yEUYsiIpaylY-_hUiYZ",
 				"port": "_dX9eTU1sTGJJYTMkHDc0bn"
 			},
 			"target": {
-				"id": "_6xQvUlG7jSLnsshR65MYzc",
+				"id": "_gv5fra8ZfODzn2eh3-ZEa7",
 				"port": "_duCC6-p_bwYWf28GFn9vmY",
 				"anchor": {
 					"name": "topLeft",
 					"args": {
-						"dx": "47%",
+						"dx": "98%",
 						"dy": "0%",
 						"rotate": true
 					}
@@ -1022,25 +1028,24 @@
 					}
 				}
 			},
-			"id": "_FXlld19wY3RhC3odDX9Ybi",
-			"z": 7,
-			"parent": "_8Zaq43Xolz8OLfUazBB6WU",
+			"id": "12b9ee09-14b2-43f2-8937-5f3acfac61ad",
+			"z": 6,
 			"pathPoints": [
 				{
-					"x": 826,
-					"y": 534
+					"x": 261.01,
+					"y": 449.01
 				},
 				{
-					"x": 808,
-					"y": 534
+					"x": 243.005,
+					"y": 449.01
 				},
 				{
-					"x": 808,
-					"y": 528.76
+					"x": 243.005,
+					"y": 446.84
 				},
 				{
-					"x": 780,
-					"y": 528.76
+					"x": 215,
+					"y": 446.84
 				}
 			],
 			"attrs": {
@@ -1093,8 +1098,8 @@
 				}
 			],
 			"position": {
-				"x": 649.5,
-				"y": 220.5
+				"x": 84.50782775878906,
+				"y": 135.5104217529297
 			},
 			"size": {
 				"width": 69,
@@ -1297,9 +1302,9 @@
 				}
 			},
 			"cof_eClassName": "Bus",
-			"id": "_gskdxk9iZzhEXH8MfKDkur",
-			"z": 8,
-			"parent": "_8Zaq43Xolz8OLfUazBB6WU",
+			"id": "_TrT--0v4oB12N80dxT0Ogo",
+			"z": 7,
+			"parent": "_War907w9qhzJtiVzgR9yI_",
 			"attrs": {
 				"body": {
 					"refD": "m 0 0 l 16 -16 v 8 h 53 v -8 l 16 16 l -16 16 v -8 h -53 v 8 l -16 -16"
@@ -1314,11 +1319,11 @@
 		{
 			"type": "link",
 			"source": {
-				"id": "_phpgmM5qxbewG4ubiOiIpF",
+				"id": "_t69BinhUvdl2pSAx3LgjX6",
 				"port": "_dX9eTU1sTGJJYTMkHDc0bn"
 			},
 			"target": {
-				"id": "_gskdxk9iZzhEXH8MfKDkur",
+				"id": "_TrT--0v4oB12N80dxT0Ogo",
 				"port": "_duCC6-p_bwYWf28GFn9vmY",
 				"anchor": {
 					"name": "topLeft",
@@ -1352,25 +1357,24 @@
 					}
 				}
 			},
-			"id": "_YXtbRWZhZTsWUndFV1QqdW",
-			"z": 9,
-			"parent": "_8Zaq43Xolz8OLfUazBB6WU",
+			"id": "8711e388-90c6-4519-bc1f-c74feb405c42",
+			"z": 8,
 			"pathPoints": [
 				{
-					"x": 609,
-					"y": 250
+					"x": 44.01,
+					"y": 165.01
 				},
 				{
-					"x": 635.2,
-					"y": 250
+					"x": 70.21,
+					"y": 165.01
 				},
 				{
-					"x": 635.2,
-					"y": 242.61
+					"x": 70.21,
+					"y": 157.62
 				},
 				{
-					"x": 671.4,
-					"y": 242.61
+					"x": 106.41,
+					"y": 157.62
 				}
 			],
 			"attrs": {
@@ -1409,11 +1413,11 @@
 		{
 			"type": "link",
 			"source": {
-				"id": "_dPXNmhotm4tzKyE9OhSiMn",
+				"id": "_3fn3glrvehD_SuLWDqPt64",
 				"port": "_dX9eTU1sTGJJYTMkHDc0bn"
 			},
 			"target": {
-				"id": "_gskdxk9iZzhEXH8MfKDkur",
+				"id": "_TrT--0v4oB12N80dxT0Ogo",
 				"port": "_duCC6-p_bwYWf28GFn9vmY",
 				"anchor": {
 					"name": "topLeft",
@@ -1447,45 +1451,45 @@
 					}
 				}
 			},
-			"id": "_UTRFSnVBfUkTRyFUWlhnRT",
-			"z": 10,
-			"parent": "_8Zaq43Xolz8OLfUazBB6WU",
+			"id": "35aff496-d282-4c5d-8694-55741b6fadd0",
+			"z": 9,
 			"vertices": [
 				{
-					"x": 706,
-					"y": 241.5
+					"x": 141.00782775878906,
+					"y": 156.5104217529297
 				},
 				{
-					"x": 706,
-					"y": 241.5
+					"x": 141.00782775878906,
+					"y": 156.5104217529297
 				}
 			],
 			"pathPoints": [
 				{
-					"x": 751,
-					"y": 250
+					"x": 186.01,
+					"y": 165.01
 				},
 				{
-					"x": 706,
-					"y": 250
+					"x": 141.00782775878906,
+					"y": 165.01
 				},
 				{
-					"x": 706,
-					"y": 241.5
+					"x": 141.00782775878906,
+					"y": 156.5104217529297
 				},
 				{
-					"x": 696.3,
-					"y": 241.5
+					"x": 131.30891387939454,
+					"y": 156.5104217529297
 				},
 				{
-					"x": 696.3,
-					"y": 242.61
+					"x": 131.30891387939454,
+					"y": 157.62
 				},
 				{
-					"x": 696.6,
-					"y": 242.61
+					"x": 131.61,
+					"y": 157.62
 				}
 			],
+			"parent": "_War907w9qhzJtiVzgR9yI_",
 			"attrs": {
 				"wrapper": {
 					"connection": true,
@@ -1552,8 +1556,8 @@
 				}
 			],
 			"position": {
-				"x": 464,
-				"y": 147
+				"x": -100.99217224121094,
+				"y": 62.01042175292969
 			},
 			"size": {
 				"width": 139,
@@ -1652,8 +1656,9 @@
 				},
 				"soCInterface": {
 					"annotations": {
-						"defaultValue": "TLM2"
-					}
+						"defaultValue": "PureTLM2"
+					},
+					"disabled": false
 				},
 				"constructor": {
 					"type": "EString",
@@ -1747,14 +1752,13 @@
 				}
 			},
 			"cof_eClassName": "Processor",
-			"id": "_v9mqRyhZPWVdb5dtip11bo",
-			"z": 11,
+			"id": "_RQDREzlERFqICmmBBU45o0",
+			"z": 10,
 			"embeds": [
-				"_SmEAaCF3aBtSV0VtZXFlZn",
-				"_qXnXUFkuoH-TPjMqDFbQAO",
-				"_phpgmM5qxbewG4ubiOiIpF"
+				"_1DDU_LvPW58Ahc6-t1Bqh0",
+				"_t69BinhUvdl2pSAx3LgjX6"
 			],
-			"parent": "_8Zaq43Xolz8OLfUazBB6WU",
+			"parent": "_War907w9qhzJtiVzgR9yI_",
 			"attrs": {
 				"body": {
 					"strokeWidth": "1"
@@ -1789,8 +1793,8 @@
 				}
 			],
 			"position": {
-				"x": 464,
-				"y": 171
+				"x": -100.99217224121094,
+				"y": 86.01042175292969
 			},
 			"size": {
 				"width": 139,
@@ -1810,12 +1814,10 @@
 				}
 			},
 			"cof_eClassName": "Structure",
-			"id": "_qXnXUFkuoH-TPjMqDFbQAO",
-			"z": 12,
-			"embeds": [
-				"_3n1cnAkPQaud6z5D0xaPyo"
-			],
-			"parent": "_v9mqRyhZPWVdb5dtip11bo",
+			"id": "_1DDU_LvPW58Ahc6-t1Bqh0",
+			"z": 11,
+			"parent": "_RQDREzlERFqICmmBBU45o0",
+			"embeds": [],
 			"attrs": {
 				"label": {
 					"textWrap": {
@@ -1825,268 +1827,6 @@
 			}
 		},
 		{
-			"type": "cofluent.component.MasterInterface",
-			"markup": [
-				{
-					"tagName": "path",
-					"selector": "multiInstanceIcon"
-				},
-				{
-					"tagName": "rect",
-					"selector": "body"
-				},
-				{
-					"tagName": "rect",
-					"selector": "header"
-				},
-				{
-					"tagName": "image",
-					"selector": "background"
-				},
-				{
-					"tagName": "path",
-					"selector": "icon"
-				},
-				{
-					"tagName": "image",
-					"selector": "documentIcon"
-				},
-				{
-					"tagName": "text",
-					"selector": "label"
-				},
-				{
-					"tagName": "text",
-					"selector": "txt"
-				}
-			],
-			"position": {
-				"x": 490,
-				"y": 219
-			},
-			"size": {
-				"width": 75,
-				"height": 64
-			},
-			"ports": {
-				"groups": {
-					"port": {
-						"markup": "<rect />",
-						"position": {
-							"name": "top",
-							"args": {
-								"x": 0,
-								"y": 0
-							}
-						}
-					}
-				},
-				"items": [
-					{
-						"group": "port",
-						"args": {},
-						"attrs": {
-							"rect": {
-								"width": 75,
-								"height": 64,
-								"fill": "#ff0000",
-								"fillOpacity": 0,
-								"pointerEvents": "stroke",
-								"strokeWidth": 10,
-								"stroke": "#feb663",
-								"strokeOpacity": 0,
-								"magnet": true
-							}
-						},
-						"z": 3,
-						"id": "_ZhDt7X9vBhZ_bwYWf28Gj_"
-					}
-				]
-			},
-			"angle": 0,
-			"cof_attrs": {
-				"bufferPolicy": {
-					"annotations": {
-						"defaultValue": "FIFO"
-					}
-				},
-				"bufferCapacity": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": "1"
-					}
-				},
-				"availableMemory": {
-					"type": "EString",
-					"annotations": {
-						"defaultUnit": "MB",
-						"defaultValue": "1"
-					}
-				},
-				"bufferReadTime": {
-					"type": "EString",
-					"annotations": {
-						"defaultUnit": "ns",
-						"defaultValue": "1"
-					}
-				},
-				"bufferWriteTime": {
-					"type": "EString",
-					"annotations": {
-						"defaultUnit": "ns",
-						"defaultValue": "1"
-					}
-				},
-				"dynamicPowerConsumption": {
-					"type": "EString",
-					"annotations": {
-						"defaultUnit": "uW",
-						"defaultValue": "0"
-					}
-				},
-				"cost": {
-					"type": "EString",
-					"annotations": {
-						"defaultUnit": "USD",
-						"defaultValue": "0"
-					}
-				},
-				"dynamicResourceLoad": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": "100"
-					}
-				},
-				"concurrency": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": "1"
-					}
-				},
-				"initializations": {
-					"type": "EString",
-					"annotations": {
-						"type": "initializations"
-					}
-				},
-				"includeInheritedHeader": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": ""
-					}
-				},
-				"inheritanceClass": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": ""
-					}
-				},
-				"callToInheritedConstructors": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": ""
-					}
-				},
-				"name": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": "rnf_tlm"
-					}
-				},
-				"documentation": {
-					"type": "EString",
-					"annotations": {}
-				},
-				"max": {
-					"type": "RangeLimit",
-					"integerLimit": null,
-					"designParameter": null,
-					"annotations": {}
-				},
-				"beforeWriteComponent": {
-					"type": "EString",
-					"annotations": {
-						"type": "callback"
-					}
-				},
-				"afterWriteComponent": {
-					"type": "EString",
-					"annotations": {
-						"type": "callback"
-					}
-				},
-				"beforeReadComponent": {
-					"type": "EString",
-					"annotations": {
-						"type": "callback"
-					}
-				},
-				"afterReadComponent": {
-					"type": "EString",
-					"annotations": {
-						"type": "callback"
-					}
-				},
-				"beforeWriteInterconnect": {
-					"type": "EString",
-					"annotations": {
-						"type": "callback"
-					}
-				},
-				"afterWriteInterconnect": {
-					"type": "EString",
-					"annotations": {
-						"type": "callback"
-					}
-				},
-				"beforeReadInterconnect": {
-					"type": "EString",
-					"annotations": {
-						"type": "callback"
-					}
-				},
-				"afterReadInterconnect": {
-					"type": "EString",
-					"annotations": {
-						"type": "callback"
-					}
-				},
-				"bufferOverflow": {
-					"type": "EString",
-					"annotations": {
-						"type": "callback"
-					}
-				}
-			},
-			"cof_eClassName": "MasterInterface",
-			"id": "_3n1cnAkPQaud6z5D0xaPyo",
-			"z": 13,
-			"embeds": [
-				"_bLapfyGxEDRkUXfr4k4fVh"
-			],
-			"parent": "_qXnXUFkuoH-TPjMqDFbQAO",
-			"attrs": {
-				"body": {
-					"strokeWidth": "1"
-				},
-				"header": {
-					"strokeWidth": "1"
-				},
-				"label": {
-					"textWrap": {
-						"text": "rnf_tlm"
-					},
-					"fontFamily": "Segoe UI"
-				},
-				"isimIcon": {
-					"xlinkHref": ""
-				},
-				"isimAttributesIcon": {
-					"xlinkHref": ""
-				}
-			}
-		},
-		{
 			"type": "cofluent.component.Port",
 			"markup": [
 				{
@@ -2103,8 +1843,8 @@
 				}
 			],
 			"position": {
-				"x": 565,
-				"y": 252
+				"x": 38.00782775878906,
+				"y": 159.0104217529297
 			},
 			"size": {
 				"width": 12,
@@ -2219,250 +1959,9 @@
 				}
 			},
 			"cof_eClassName": "Port",
-			"id": "_bLapfyGxEDRkUXfr4k4fVh",
-			"z": 14,
-			"parent": "_3n1cnAkPQaud6z5D0xaPyo",
-			"attrs": {
-				"label": {
-					"textWrap": {
-						"text": "connector_st1:BS(In/out)"
-					}
-				}
-			}
-		},
-		{
-			"type": "link",
-			"source": {
-				"id": "_bLapfyGxEDRkUXfr4k4fVh",
-				"port": "_dX9eTU1sTGJJYTMkHDc0bn"
-			},
-			"target": {
-				"id": "_phpgmM5qxbewG4ubiOiIpF",
-				"port": "_dX9eTU1sTGJJYTMkHDc0bn"
-			},
-			"markup": [
-				{
-					"tagName": "path",
-					"selector": "wrapper"
-				},
-				{
-					"tagName": "path",
-					"selector": "core"
-				}
-			],
-			"defaultLabel": {
-				"attrs": {
-					"rect": {
-						"fillOpacity": 0
-					}
-				},
-				"position": {
-					"distance": -30,
-					"args": {
-						"absoluteDistance": true
-					}
-				}
-			},
-			"id": "_SmEAaCF3aBtSV0VtZXFlZn",
+			"id": "_t69BinhUvdl2pSAx3LgjX6",
 			"z": 15,
-			"parent": "_v9mqRyhZPWVdb5dtip11bo",
-			"vertices": [
-				{
-					"x": 592,
-					"y": 258
-				},
-				{
-					"x": 592,
-					"y": 258
-				}
-			],
-			"pathPoints": [
-				{
-					"x": 571,
-					"y": 258
-				},
-				{
-					"x": 600.5,
-					"y": 258
-				},
-				{
-					"x": 600.5,
-					"y": 250
-				},
-				{
-					"x": 609,
-					"y": 250
-				}
-			],
-			"attrs": {
-				"wrapper": {
-					"connection": true,
-					"fill": "none",
-					"stroke": "#3e69ff",
-					"strokeWidth": 5,
-					"strokeOpacity": 1,
-					"strokeLinejoin": "bevel"
-				},
-				"core": {
-					"connection": true,
-					"fill": "none",
-					"stroke": "#ffffff",
-					"strokeWidth": 3,
-					"strokeDasharray": "",
-					"strokeLinejoin": "bevel",
-					"targetMarker": {
-						"type": "path",
-						"fill": "#ffffff",
-						"stroke": "#3e69ff",
-						"stroke-width": 1,
-						"d": "M 8 -8 -2 0 8 8 -2 0 Z"
-					},
-					"sourceMarker": {
-						"type": "path",
-						"fill": "#ffffff",
-						"stroke": "#3e69ff",
-						"stroke-width": 1,
-						"d": "M 8 -8 -2 0 8 8 -2 0 Z"
-					}
-				}
-			}
-		},
-		{
-			"type": "cofluent.component.Port",
-			"markup": [
-				{
-					"tagName": "rect",
-					"selector": "body"
-				},
-				{
-					"tagName": "image",
-					"selector": "documentIcon"
-				},
-				{
-					"tagName": "text",
-					"selector": "label"
-				}
-			],
-			"position": {
-				"x": 603,
-				"y": 244
-			},
-			"size": {
-				"width": 12,
-				"height": 12
-			},
-			"ports": {
-				"groups": {
-					"outputActions_inputActions_inputSelectorInputs_outputSelectorOutputs_relations_port_ports_operations": {
-						"markup": "<rect />",
-						"position": {
-							"name": "top",
-							"args": {
-								"x": 0,
-								"y": 0
-							}
-						}
-					}
-				},
-				"items": [
-					{
-						"group": "outputActions_inputActions_inputSelectorInputs_outputSelectorOutputs_relations_port_ports_operations",
-						"attrs": {
-							"rect": {
-								"width": 12,
-								"height": 12,
-								"fill": "#ff0000",
-								"fillOpacity": 0,
-								"pointerEvents": "stroke",
-								"strokeWidth": 10,
-								"stroke": "#feb663",
-								"strokeOpacity": 0,
-								"magnet": true
-							}
-						},
-						"z": -1,
-						"id": "_dX9eTU1sTGJJYTMkHDc0bn"
-					}
-				]
-			},
-			"angle": 0,
-			"cof_attrs": {
-				"type": {
-					"annotations": {
-						"defaultValue": "BUS"
-					},
-					"display": "none"
-				},
-				"direction": {
-					"annotations": {
-						"defaultValue": "IN_OUT"
-					},
-					"display": "none"
-				},
-				"size": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": ""
-					},
-					"display": "none"
-				},
-				"synchronizeName": {
-					"type": "EBoolean",
-					"annotations": {
-						"defaultValue": "true"
-					}
-				},
-				"protocol": {
-					"annotations": {
-						"defaultValue": "COFLUENT"
-					}
-				},
-				"socketType": {
-					"annotations": {
-						"defaultValue": "INITIATOR"
-					},
-					"display": "none"
-				},
-				"constructorArguments": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": ""
-					}
-				},
-				"templateArguments": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": ""
-					}
-				},
-				"vector": {
-					"type": "EBoolean",
-					"annotations": {
-						"defaultValue": "false"
-					}
-				},
-				"requestPipelineDepth": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": "1"
-					},
-					"display": "none"
-				},
-				"name": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": "connector_st1"
-					}
-				},
-				"documentation": {
-					"type": "EString",
-					"annotations": {}
-				}
-			},
-			"cof_eClassName": "Port",
-			"id": "_phpgmM5qxbewG4ubiOiIpF",
-			"z": 16,
-			"parent": "_v9mqRyhZPWVdb5dtip11bo",
+			"parent": "_RQDREzlERFqICmmBBU45o0",
 			"attrs": {
 				"label": {
 					"textWrap": {
@@ -2504,8 +2003,8 @@
 				}
 			],
 			"position": {
-				"x": 543,
-				"y": 465
+				"x": -21.992172241210938,
+				"y": 380.0104217529297
 			},
 			"size": {
 				"width": 160,
@@ -2604,8 +2103,9 @@
 				},
 				"soCInterface": {
 					"annotations": {
-						"defaultValue": "TLM2"
-					}
+						"defaultValue": "PureTLM2"
+					},
+					"disabled": false
 				},
 				"constructor": {
 					"type": "EString",
@@ -2698,15 +2198,15 @@
 				}
 			},
 			"cof_eClassName": "Processor",
-			"id": "_wILzpIlGzNGeR8n60BS3y2",
-			"z": 17,
+			"id": "__Ih4lsgmi8FA8sOLk-ImLp",
+			"z": 16,
 			"embeds": [
-				"_fCdJSG95HU0KD08WUm8iWH",
-				"_teLHVD_py8WJF2xowijiH7",
-				"_NUOAXwLdJTfVFUepu-Utl7",
-				"_6bGfzt5JjT-8Vt5ltzLoqR"
+				"5da5b405-92a8-4eb0-9e67-ca9c90d76bf6",
+				"_3BMXS4kHKfDgWzNs2f049v",
+				"_BXH_-Z9HVPZKTdCf6mAyx7",
+				"_ObkX1MirNsVGrwwOvRFgPD"
 			],
-			"parent": "_8Zaq43Xolz8OLfUazBB6WU",
+			"parent": "_War907w9qhzJtiVzgR9yI_",
 			"attrs": {
 				"body": {
 					"strokeWidth": "1"
@@ -2741,8 +2241,8 @@
 				}
 			],
 			"position": {
-				"x": 543,
-				"y": 489
+				"x": -21.992172241210938,
+				"y": 404.0104217529297
 			},
 			"size": {
 				"width": 160,
@@ -2762,12 +2262,12 @@
 				}
 			},
 			"cof_eClassName": "Structure",
-			"id": "_teLHVD_py8WJF2xowijiH7",
-			"z": 18,
+			"id": "_3BMXS4kHKfDgWzNs2f049v",
+			"z": 17,
+			"parent": "__Ih4lsgmi8FA8sOLk-ImLp",
 			"embeds": [
-				"_BDXiDgJ7Zv3-rQlYUzSSu9"
+				"_s6IWk-ZDA7XA5bIw_IW3ue"
 			],
-			"parent": "_wILzpIlGzNGeR8n60BS3y2",
 			"attrs": {
 				"label": {
 					"textWrap": {
@@ -2813,8 +2313,8 @@
 				}
 			],
 			"position": {
-				"x": 601,
-				"y": 527
+				"x": 36.00782775878906,
+				"y": 442.0104217529297
 			},
 			"size": {
 				"width": 69,
@@ -3011,12 +2511,12 @@
 				}
 			},
 			"cof_eClassName": "SlaveInterface",
-			"id": "_BDXiDgJ7Zv3-rQlYUzSSu9",
-			"z": 19,
+			"id": "_s6IWk-ZDA7XA5bIw_IW3ue",
+			"z": 18,
+			"parent": "_3BMXS4kHKfDgWzNs2f049v",
 			"embeds": [
-				"_9TEMV1Z01otFC9XzWYDyjB"
+				"_MPh7GWUCHyF58LVmZJfkH3"
 			],
-			"parent": "_teLHVD_py8WJF2xowijiH7",
 			"attrs": {
 				"body": {
 					"strokeWidth": "1"
@@ -3055,8 +2555,8 @@
 				}
 			],
 			"position": {
-				"x": 657,
-				"y": 515
+				"x": 92.00782775878906,
+				"y": 430.0104217529297
 			},
 			"size": {
 				"width": 12,
@@ -3171,13 +2671,13 @@
 				}
 			},
 			"cof_eClassName": "Port",
-			"id": "_9TEMV1Z01otFC9XzWYDyjB",
-			"z": 20,
-			"parent": "_BDXiDgJ7Zv3-rQlYUzSSu9",
+			"id": "_MPh7GWUCHyF58LVmZJfkH3",
+			"z": 19,
+			"parent": "_s6IWk-ZDA7XA5bIw_IW3ue",
 			"attrs": {
 				"label": {
 					"textWrap": {
-						"text": "CHI_ICN_TLM"
+						"text": "CHI_ICN_TLM:BS(In/out)"
 					}
 				}
 			}
@@ -3185,11 +2685,11 @@
 		{
 			"type": "link",
 			"source": {
-				"id": "_9TEMV1Z01otFC9XzWYDyjB",
+				"id": "_MPh7GWUCHyF58LVmZJfkH3",
 				"port": "_dX9eTU1sTGJJYTMkHDc0bn"
 			},
 			"target": {
-				"id": "_NUOAXwLdJTfVFUepu-Utl7",
+				"id": "_BXH_-Z9HVPZKTdCf6mAyx7",
 				"port": "_dX9eTU1sTGJJYTMkHDc0bn"
 			},
 			"markup": [
@@ -3215,37 +2715,45 @@
 					}
 				}
 			},
-			"id": "_fCdJSG95HU0KD08WUm8iWH",
-			"z": 21,
-			"parent": "_wILzpIlGzNGeR8n60BS3y2",
+			"id": "5da5b405-92a8-4eb0-9e67-ca9c90d76bf6",
+			"z": 20,
 			"vertices": [
 				{
-					"x": 663,
-					"y": 487
+					"x": 98.00782775878906,
+					"y": 402.0104217529297
 				},
 				{
-					"x": 663,
-					"y": 487
+					"x": 98.00782775878906,
+					"y": 402.0104217529297
 				}
 			],
 			"pathPoints": [
 				{
-					"x": 663,
-					"y": 521
+					"x": 98.01,
+					"y": 436.01
 				},
 				{
-					"x": 663,
-					"y": 473
+					"x": 98.01,
+					"y": 402.0104217529297
 				},
 				{
-					"x": 658,
-					"y": 473
+					"x": 98.00782775878906,
+					"y": 402.0104217529297
 				},
 				{
-					"x": 658,
-					"y": 459
+					"x": 98.00782775878906,
+					"y": 388.01021087646484
+				},
+				{
+					"x": 93.01,
+					"y": 388.01021087646484
+				},
+				{
+					"x": 93.01,
+					"y": 374.01
 				}
 			],
+			"parent": "__Ih4lsgmi8FA8sOLk-ImLp",
 			"attrs": {
 				"wrapper": {
 					"connection": true,
@@ -3296,8 +2804,8 @@
 				}
 			],
 			"position": {
-				"x": 652,
-				"y": 453
+				"x": 87.00782775878906,
+				"y": 368.0104217529297
 			},
 			"size": {
 				"width": 12,
@@ -3412,13 +2920,13 @@
 				}
 			},
 			"cof_eClassName": "Port",
-			"id": "_NUOAXwLdJTfVFUepu-Utl7",
-			"z": 22,
-			"parent": "_wILzpIlGzNGeR8n60BS3y2",
+			"id": "_BXH_-Z9HVPZKTdCf6mAyx7",
+			"z": 21,
+			"parent": "__Ih4lsgmi8FA8sOLk-ImLp",
 			"attrs": {
 				"label": {
 					"textWrap": {
-						"text": "CHI_ICN_TLM"
+						"text": "CHI_ICN_TLM:BS(In/out)"
 					}
 				}
 			}
@@ -3440,8 +2948,8 @@
 				}
 			],
 			"position": {
-				"x": 703,
-				"y": 525
+				"x": 138.00782775878906,
+				"y": 440.0104217529297
 			},
 			"size": {
 				"width": 12,
@@ -3556,13 +3064,13 @@
 				}
 			},
 			"cof_eClassName": "Port",
-			"id": "_6bGfzt5JjT-8Vt5ltzLoqR",
-			"z": 23,
-			"parent": "_wILzpIlGzNGeR8n60BS3y2",
+			"id": "_ObkX1MirNsVGrwwOvRFgPD",
+			"z": 22,
+			"parent": "__Ih4lsgmi8FA8sOLk-ImLp",
 			"attrs": {
 				"label": {
 					"textWrap": {
-						"text": "connector_st2"
+						"text": "connector_st2:BS(In/out)"
 					}
 				}
 			}
@@ -3600,8 +3108,8 @@
 				}
 			],
 			"position": {
-				"x": 832,
-				"y": 492
+				"x": 267.00782775878906,
+				"y": 407.0104217529297
 			},
 			"size": {
 				"width": 98,
@@ -3700,8 +3208,9 @@
 				},
 				"soCInterface": {
 					"annotations": {
-						"defaultValue": "TLM2"
-					}
+						"defaultValue": "PureTLM2"
+					},
+					"disabled": false
 				},
 				"constructor": {
 					"type": "EString",
@@ -3793,14 +3302,14 @@
 				}
 			},
 			"cof_eClassName": "Processor",
-			"id": "_Vzuy-hAzRXUc1NvJP0B2-1",
-			"z": 24,
+			"id": "_lxdA1-WSMgS_B7tBCgIPLH",
+			"z": 23,
 			"windowState": "out",
+			"window": "_a9G6Ry9mvaAeTlZVjOa-v-",
 			"embeds": [
-				"_clkxurMVo4y6sNn-cOkkbJ"
+				"_Lh6yEUYsiIpaylY-_hUiYZ"
 			],
-			"window": "_Vzuy-hAzRXUc1NvJP0B2-1",
-			"parent": "_8Zaq43Xolz8OLfUazBB6WU",
+			"parent": "_War907w9qhzJtiVzgR9yI_",
 			"attrs": {
 				"body": {
 					"strokeWidth": "1",
@@ -3877,9 +3386,9 @@
 								"angle": 0,
 								"cof_attrs": {},
 								"cof_eClassName": "DecorationNode",
-								"id": "_oxQaQiem8mkqJiZZ8qesRG",
+								"id": "_2dTFELwWq0d6uqwt-TIvGb",
 								"decoration": true,
-								"parent": "_clkxurMVo4y6sNn-cOkkbJ",
+								"parent": "_Lh6yEUYsiIpaylY-_hUiYZ",
 								"attrs": {
 									"icon": {
 										"d": "M 8 -6 0 0 8 6 4 3 20 3 16 6 24 0 16 -6 20 -3 4 -3 Z",
@@ -3896,11 +3405,11 @@
 								"type": "link",
 								"source": {
 									"port": "_7_b9hMDp4ILr6n-fmY_wn5",
-									"id": "_oxQaQiem8mkqJiZZ8qesRG"
+									"id": "_2dTFELwWq0d6uqwt-TIvGb"
 								},
 								"target": {
 									"port": "_dX9eTU1sTGJJYTMkHDc0bn",
-									"id": "_clkxurMVo4y6sNn-cOkkbJ"
+									"id": "_Lh6yEUYsiIpaylY-_hUiYZ"
 								},
 								"markup": [
 									{
@@ -3925,8 +3434,18 @@
 										}
 									}
 								},
-								"id": "_R9x91pmZOvMHllHfMFxXYY",
+								"id": "a7da0a88-3c9a-4b22-82a8-6692009c3a29",
 								"decoration": true,
+								"pathPoints": [
+									{
+										"x": 129,
+										"y": 149
+									},
+									{
+										"x": 199,
+										"y": 149
+									}
+								],
 								"attrs": {
 									"wrapper": {
 										"connection": true,
@@ -4085,8 +3604,9 @@
 									},
 									"soCInterface": {
 										"annotations": {
-											"defaultValue": "TLM2"
-										}
+											"defaultValue": "PureTLM2"
+										},
+										"disabled": false
 									},
 									"constructor": {
 										"type": "EString",
@@ -4178,12 +3698,12 @@
 									}
 								},
 								"cof_eClassName": "Processor",
-								"id": "_Vzuy-hAzRXUc1NvJP0B2-1",
+								"id": "_lxdA1-WSMgS_B7tBCgIPLH",
 								"z": 33,
-								"embeds": [
-									"_clkxurMVo4y6sNn-cOkkbJ"
-								],
 								"windowState": "in",
+								"embeds": [
+									"_Lh6yEUYsiIpaylY-_hUiYZ"
+								],
 								"attrs": {
 									"body": {
 										"strokeWidth": "1"
@@ -4338,13 +3858,13 @@
 									}
 								},
 								"cof_eClassName": "Port",
-								"id": "_clkxurMVo4y6sNn-cOkkbJ",
+								"id": "_Lh6yEUYsiIpaylY-_hUiYZ",
 								"z": 34,
-								"embeds": [
-									"_oxQaQiem8mkqJiZZ8qesRG"
-								],
-								"parent": "_Vzuy-hAzRXUc1NvJP0B2-1",
 								"windowState": "in",
+								"parent": "_lxdA1-WSMgS_B7tBCgIPLH",
+								"embeds": [
+									"_2dTFELwWq0d6uqwt-TIvGb"
+								],
 								"attrs": {
 									"label": {
 										"textWrap": {
@@ -4376,8 +3896,8 @@
 				}
 			],
 			"position": {
-				"x": 820,
-				"y": 528
+				"x": 255.00782775878906,
+				"y": 443.0104217529297
 			},
 			"size": {
 				"width": 12,
@@ -4492,14 +4012,14 @@
 				}
 			},
 			"cof_eClassName": "Port",
-			"id": "_clkxurMVo4y6sNn-cOkkbJ",
-			"z": 25,
+			"id": "_Lh6yEUYsiIpaylY-_hUiYZ",
+			"z": 24,
 			"windowState": "out",
-			"parent": "_Vzuy-hAzRXUc1NvJP0B2-1",
+			"parent": "_lxdA1-WSMgS_B7tBCgIPLH",
 			"attrs": {
 				"label": {
 					"textWrap": {
-						"text": "connector_st2"
+						"text": "connector_st2:BS(In/out)"
 					}
 				}
 			}
@@ -4537,8 +4057,8 @@
 				}
 			],
 			"position": {
-				"x": 757,
-				"y": 147
+				"x": 192.00782775878906,
+				"y": 62.01042175292969
 			},
 			"size": {
 				"width": 169,
@@ -4637,8 +4157,9 @@
 				},
 				"soCInterface": {
 					"annotations": {
-						"defaultValue": "TLM2"
-					}
+						"defaultValue": "PureTLM2"
+					},
+					"disabled": false
 				},
 				"constructor": {
 					"type": "EString",
@@ -4731,15 +4252,14 @@
 				}
 			},
 			"cof_eClassName": "Processor",
-			"id": "_CY8nuutXSdwvq02n6eOEUm",
-			"z": 26,
+			"id": "_-pEsZBmzhLVQrOkuQt1jf0",
+			"z": 25,
 			"embeds": [
-				"_eigRYVohBnhre14ddGZzMD",
-				"_uSB0QcgNSJf-DE9QyZTuYB",
-				"_dPXNmhotm4tzKyE9OhSiMn",
-				"_Z7ktIVyi1hU3-4go3Flvil"
+				"_cq3QMp2Ywstu4v_C3Q_Dek",
+				"_3fn3glrvehD_SuLWDqPt64",
+				"_JI7huS3E5TNeVR2VH7c9SK"
 			],
-			"parent": "_8Zaq43Xolz8OLfUazBB6WU",
+			"parent": "_War907w9qhzJtiVzgR9yI_",
 			"attrs": {
 				"body": {
 					"strokeWidth": "1"
@@ -4774,8 +4294,8 @@
 				}
 			],
 			"position": {
-				"x": 757,
-				"y": 171
+				"x": 192.00782775878906,
+				"y": 86.01042175292969
 			},
 			"size": {
 				"width": 169,
@@ -4795,12 +4315,10 @@
 				}
 			},
 			"cof_eClassName": "Structure",
-			"id": "_uSB0QcgNSJf-DE9QyZTuYB",
-			"z": 27,
-			"embeds": [
-				"_wxo9UuMRfOSMgQDH3K7TeU"
-			],
-			"parent": "_CY8nuutXSdwvq02n6eOEUm",
+			"id": "_cq3QMp2Ywstu4v_C3Q_Dek",
+			"z": 26,
+			"parent": "_-pEsZBmzhLVQrOkuQt1jf0",
+			"embeds": [],
 			"attrs": {
 				"label": {
 					"textWrap": {
@@ -4810,268 +4328,6 @@
 			}
 		},
 		{
-			"type": "cofluent.component.MasterInterface",
-			"markup": [
-				{
-					"tagName": "path",
-					"selector": "multiInstanceIcon"
-				},
-				{
-					"tagName": "rect",
-					"selector": "body"
-				},
-				{
-					"tagName": "rect",
-					"selector": "header"
-				},
-				{
-					"tagName": "image",
-					"selector": "background"
-				},
-				{
-					"tagName": "path",
-					"selector": "icon"
-				},
-				{
-					"tagName": "image",
-					"selector": "documentIcon"
-				},
-				{
-					"tagName": "text",
-					"selector": "label"
-				},
-				{
-					"tagName": "text",
-					"selector": "txt"
-				}
-			],
-			"position": {
-				"x": 816,
-				"y": 216
-			},
-			"size": {
-				"width": 79,
-				"height": 68
-			},
-			"ports": {
-				"groups": {
-					"port": {
-						"markup": "<rect />",
-						"position": {
-							"name": "top",
-							"args": {
-								"x": 0,
-								"y": 0
-							}
-						}
-					}
-				},
-				"items": [
-					{
-						"group": "port",
-						"args": {},
-						"attrs": {
-							"rect": {
-								"width": 79,
-								"height": 68,
-								"fill": "#ff0000",
-								"fillOpacity": 0,
-								"pointerEvents": "stroke",
-								"strokeWidth": 10,
-								"stroke": "#feb663",
-								"strokeOpacity": 0,
-								"magnet": true
-							}
-						},
-						"z": 3,
-						"id": "_ZhDt7X9vBhZ_bwYWf28Gj_"
-					}
-				]
-			},
-			"angle": 0,
-			"cof_attrs": {
-				"bufferPolicy": {
-					"annotations": {
-						"defaultValue": "FIFO"
-					}
-				},
-				"bufferCapacity": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": "1"
-					}
-				},
-				"availableMemory": {
-					"type": "EString",
-					"annotations": {
-						"defaultUnit": "MB",
-						"defaultValue": "1"
-					}
-				},
-				"bufferReadTime": {
-					"type": "EString",
-					"annotations": {
-						"defaultUnit": "ns",
-						"defaultValue": "1"
-					}
-				},
-				"bufferWriteTime": {
-					"type": "EString",
-					"annotations": {
-						"defaultUnit": "ns",
-						"defaultValue": "1"
-					}
-				},
-				"dynamicPowerConsumption": {
-					"type": "EString",
-					"annotations": {
-						"defaultUnit": "uW",
-						"defaultValue": "0"
-					}
-				},
-				"cost": {
-					"type": "EString",
-					"annotations": {
-						"defaultUnit": "USD",
-						"defaultValue": "0"
-					}
-				},
-				"dynamicResourceLoad": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": "100"
-					}
-				},
-				"concurrency": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": "1"
-					}
-				},
-				"initializations": {
-					"type": "EString",
-					"annotations": {
-						"type": "initializations"
-					}
-				},
-				"includeInheritedHeader": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": ""
-					}
-				},
-				"inheritanceClass": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": ""
-					}
-				},
-				"callToInheritedConstructors": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": ""
-					}
-				},
-				"name": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": "cache_chi"
-					}
-				},
-				"documentation": {
-					"type": "EString",
-					"annotations": {}
-				},
-				"max": {
-					"type": "RangeLimit",
-					"integerLimit": null,
-					"designParameter": null,
-					"annotations": {}
-				},
-				"beforeWriteComponent": {
-					"type": "EString",
-					"annotations": {
-						"type": "callback"
-					}
-				},
-				"afterWriteComponent": {
-					"type": "EString",
-					"annotations": {
-						"type": "callback"
-					}
-				},
-				"beforeReadComponent": {
-					"type": "EString",
-					"annotations": {
-						"type": "callback"
-					}
-				},
-				"afterReadComponent": {
-					"type": "EString",
-					"annotations": {
-						"type": "callback"
-					}
-				},
-				"beforeWriteInterconnect": {
-					"type": "EString",
-					"annotations": {
-						"type": "callback"
-					}
-				},
-				"afterWriteInterconnect": {
-					"type": "EString",
-					"annotations": {
-						"type": "callback"
-					}
-				},
-				"beforeReadInterconnect": {
-					"type": "EString",
-					"annotations": {
-						"type": "callback"
-					}
-				},
-				"afterReadInterconnect": {
-					"type": "EString",
-					"annotations": {
-						"type": "callback"
-					}
-				},
-				"bufferOverflow": {
-					"type": "EString",
-					"annotations": {
-						"type": "callback"
-					}
-				}
-			},
-			"cof_eClassName": "MasterInterface",
-			"id": "_wxo9UuMRfOSMgQDH3K7TeU",
-			"z": 28,
-			"embeds": [
-				"_wof6pH5SNZ0lYL06Oo9bcy"
-			],
-			"parent": "_uSB0QcgNSJf-DE9QyZTuYB",
-			"attrs": {
-				"body": {
-					"strokeWidth": "1"
-				},
-				"header": {
-					"strokeWidth": "1"
-				},
-				"label": {
-					"textWrap": {
-						"text": "cache_chi"
-					},
-					"fontFamily": "Segoe UI"
-				},
-				"isimIcon": {
-					"xlinkHref": ""
-				},
-				"isimAttributesIcon": {
-					"xlinkHref": ""
-				}
-			}
-		},
-		{
 			"type": "cofluent.component.Port",
 			"markup": [
 				{
@@ -5088,249 +4344,8 @@
 				}
 			],
 			"position": {
-				"x": 839,
-				"y": 284
-			},
-			"size": {
-				"width": 12,
-				"height": 12
-			},
-			"ports": {
-				"groups": {
-					"outputActions_inputActions_inputSelectorInputs_outputSelectorOutputs_relations_port_ports_operations": {
-						"markup": "<rect />",
-						"position": {
-							"name": "top",
-							"args": {
-								"x": 0,
-								"y": 0
-							}
-						}
-					}
-				},
-				"items": [
-					{
-						"group": "outputActions_inputActions_inputSelectorInputs_outputSelectorOutputs_relations_port_ports_operations",
-						"attrs": {
-							"rect": {
-								"width": 12,
-								"height": 12,
-								"fill": "#ff0000",
-								"fillOpacity": 0,
-								"pointerEvents": "stroke",
-								"strokeWidth": 10,
-								"stroke": "#feb663",
-								"strokeOpacity": 0,
-								"magnet": true
-							}
-						},
-						"z": -1,
-						"id": "_dX9eTU1sTGJJYTMkHDc0bn"
-					}
-				]
-			},
-			"angle": 0,
-			"cof_attrs": {
-				"type": {
-					"annotations": {
-						"defaultValue": "BUS"
-					},
-					"display": "none"
-				},
-				"direction": {
-					"annotations": {
-						"defaultValue": "IN_OUT"
-					},
-					"display": "none"
-				},
-				"size": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": ""
-					},
-					"display": "none"
-				},
-				"synchronizeName": {
-					"type": "EBoolean",
-					"annotations": {
-						"defaultValue": "true"
-					}
-				},
-				"protocol": {
-					"annotations": {
-						"defaultValue": "COFLUENT"
-					}
-				},
-				"socketType": {
-					"annotations": {
-						"defaultValue": "INITIATOR"
-					},
-					"display": "none"
-				},
-				"constructorArguments": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": ""
-					}
-				},
-				"templateArguments": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": ""
-					}
-				},
-				"vector": {
-					"type": "EBoolean",
-					"annotations": {
-						"defaultValue": "false"
-					}
-				},
-				"requestPipelineDepth": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": "1"
-					},
-					"display": "none"
-				},
-				"name": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": "CHI_ICN_TLM"
-					}
-				},
-				"documentation": {
-					"type": "EString",
-					"annotations": {}
-				}
-			},
-			"cof_eClassName": "Port",
-			"id": "_wof6pH5SNZ0lYL06Oo9bcy",
-			"z": 29,
-			"parent": "_wxo9UuMRfOSMgQDH3K7TeU",
-			"attrs": {
-				"label": {
-					"textWrap": {
-						"text": "CHI_ICN_TLM"
-					}
-				}
-			}
-		},
-		{
-			"type": "link",
-			"source": {
-				"id": "_wof6pH5SNZ0lYL06Oo9bcy",
-				"port": "_dX9eTU1sTGJJYTMkHDc0bn"
-			},
-			"target": {
-				"id": "_Z7ktIVyi1hU3-4go3Flvil",
-				"port": "_dX9eTU1sTGJJYTMkHDc0bn"
-			},
-			"markup": [
-				{
-					"tagName": "path",
-					"selector": "wrapper"
-				},
-				{
-					"tagName": "path",
-					"selector": "core"
-				}
-			],
-			"defaultLabel": {
-				"attrs": {
-					"rect": {
-						"fillOpacity": 0
-					}
-				},
-				"position": {
-					"distance": -30,
-					"args": {
-						"absoluteDistance": true
-					}
-				}
-			},
-			"id": "_eigRYVohBnhre14ddGZzMD",
-			"z": 30,
-			"parent": "_CY8nuutXSdwvq02n6eOEUm",
-			"vertices": [
-				{
-					"x": 845,
-					"y": 305
-				},
-				{
-					"x": 845,
-					"y": 305
-				}
-			],
-			"pathPoints": [
-				{
-					"x": 845,
-					"y": 290
-				},
-				{
-					"x": 845,
-					"y": 309
-				},
-				{
-					"x": 840,
-					"y": 309
-				},
-				{
-					"x": 840,
-					"y": 313
-				}
-			],
-			"attrs": {
-				"wrapper": {
-					"connection": true,
-					"fill": "none",
-					"stroke": "#3e69ff",
-					"strokeWidth": 5,
-					"strokeOpacity": 1,
-					"strokeLinejoin": "bevel"
-				},
-				"core": {
-					"connection": true,
-					"fill": "none",
-					"stroke": "#ffffff",
-					"strokeWidth": 3,
-					"strokeDasharray": "",
-					"strokeLinejoin": "bevel",
-					"targetMarker": {
-						"type": "path",
-						"fill": "#ffffff",
-						"stroke": "#3e69ff",
-						"stroke-width": 1,
-						"d": "M 8 -8 -2 0 8 8 -2 0 Z"
-					},
-					"sourceMarker": {
-						"type": "path",
-						"fill": "#ffffff",
-						"stroke": "#3e69ff",
-						"stroke-width": 1,
-						"d": "M 8 -8 -2 0 8 8 -2 0 Z"
-					}
-				}
-			}
-		},
-		{
-			"type": "cofluent.component.Port",
-			"markup": [
-				{
-					"tagName": "rect",
-					"selector": "body"
-				},
-				{
-					"tagName": "image",
-					"selector": "documentIcon"
-				},
-				{
-					"tagName": "text",
-					"selector": "label"
-				}
-			],
-			"position": {
-				"x": 745,
-				"y": 244
+				"x": 180.00782775878906,
+				"y": 159.0104217529297
 			},
 			"size": {
 				"width": 12,
@@ -5445,9 +4460,9 @@
 				}
 			},
 			"cof_eClassName": "Port",
-			"id": "_dPXNmhotm4tzKyE9OhSiMn",
-			"z": 31,
-			"parent": "_CY8nuutXSdwvq02n6eOEUm",
+			"id": "_3fn3glrvehD_SuLWDqPt64",
+			"z": 30,
+			"parent": "_-pEsZBmzhLVQrOkuQt1jf0",
 			"attrs": {
 				"label": {
 					"textWrap": {
@@ -5473,8 +4488,8 @@
 				}
 			],
 			"position": {
-				"x": 834,
-				"y": 307
+				"x": 269.00782775878906,
+				"y": 222.0104217529297
 			},
 			"size": {
 				"width": 12,
@@ -5589,13 +4604,13 @@
 				}
 			},
 			"cof_eClassName": "Port",
-			"id": "_Z7ktIVyi1hU3-4go3Flvil",
-			"z": 32,
-			"parent": "_CY8nuutXSdwvq02n6eOEUm",
+			"id": "_JI7huS3E5TNeVR2VH7c9SK",
+			"z": 31,
+			"parent": "_-pEsZBmzhLVQrOkuQt1jf0",
 			"attrs": {
 				"label": {
 					"textWrap": {
-						"text": "CHI_ICN_TLM"
+						"text": "CHI_ICN_TLM:BS(In/out)"
 					}
 				}
 			}

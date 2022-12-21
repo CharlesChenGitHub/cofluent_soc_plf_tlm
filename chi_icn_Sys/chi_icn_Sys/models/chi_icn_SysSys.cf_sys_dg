@@ -40,8 +40,9 @@
 				},
 				"soCsimulationMode": {
 					"annotations": {
-						"defaultValue": "CoFluent"
-					}
+						"defaultValue": "PureTLM2"
+					},
+					"disabled": false
 				},
 				"cyclePeriod": {
 					"type": "EString",
@@ -219,8 +220,8 @@
 				}
 			],
 			"position": {
-				"x": -133.99217224121094,
-				"y": 250.0104217529297
+				"x": -130,
+				"y": 251
 			},
 			"size": {
 				"width": 520,
@@ -373,7 +374,7 @@
 				"inheritanceClass": {
 					"type": "EString",
 					"annotations": {
-						"defaultValue": "iconnect_chi<20 comma 10 comma 2 comma 0>"
+						"defaultValue": "iconnect_chi<20 comma 10 comma 1 comma 0>"
 					}
 				},
 				"callToInheritedConstructors": {
@@ -448,7 +449,7 @@
 				"anchor": {
 					"name": "topLeft",
 					"args": {
-						"dx": "42%",
+						"dx": "42.4%",
 						"dy": "100%",
 						"rotate": true
 					}
@@ -491,11 +492,11 @@
 			],
 			"pathPoints": [
 				{
-					"x": 93.01,
+					"x": 92,
 					"y": 374.01
 				},
 				{
-					"x": 93.01,
+					"x": 92,
 					"y": 314.0104217529297
 				},
 				{
@@ -504,15 +505,15 @@
 				},
 				{
 					"x": 93.00782775878906,
-					"y": 303.01021087646484
+					"y": 303.50521087646484
 				},
 				{
-					"x": 86.97,
-					"y": 303.01021087646484
+					"x": 92.91,
+					"y": 303.50521087646484
 				},
 				{
-					"x": 86.97,
-					"y": 282.01
+					"x": 92.91,
+					"y": 283
 				}
 			],
 			"attrs": {
@@ -560,7 +561,7 @@
 				"anchor": {
 					"name": "topLeft",
 					"args": {
-						"dx": "77%",
+						"dx": "79.7%",
 						"dy": "0%",
 						"rotate": true
 					}
@@ -616,15 +617,15 @@
 				},
 				{
 					"x": 275.00782775878906,
-					"y": 243.51021087646484
+					"y": 244.00521087646484
 				},
 				{
-					"x": 257.77,
-					"y": 243.51021087646484
+					"x": 274.94,
+					"y": 244.00521087646484
 				},
 				{
-					"x": 257.77,
-					"y": 258.01
+					"x": 274.94,
+					"y": 259
 				}
 			],
 			"attrs": {
@@ -1247,7 +1248,7 @@
 				"includeInheritedHeader": {
 					"type": "EString",
 					"annotations": {
-						"defaultValue": "empty.h"
+						"defaultValue": ""
 					}
 				},
 				"inheritanceClass": {
@@ -2201,7 +2202,6 @@
 			"id": "__Ih4lsgmi8FA8sOLk-ImLp",
 			"z": 16,
 			"embeds": [
-				"5da5b405-92a8-4eb0-9e67-ca9c90d76bf6",
 				"_3BMXS4kHKfDgWzNs2f049v",
 				"_BXH_-Z9HVPZKTdCf6mAyx7",
 				"_ObkX1MirNsVGrwwOvRFgPD"
@@ -2265,9 +2265,7 @@
 			"id": "_3BMXS4kHKfDgWzNs2f049v",
 			"z": 17,
 			"parent": "__Ih4lsgmi8FA8sOLk-ImLp",
-			"embeds": [
-				"_s6IWk-ZDA7XA5bIw_IW3ue"
-			],
+			"embeds": [],
 			"attrs": {
 				"label": {
 					"textWrap": {
@@ -2277,268 +2275,6 @@
 			}
 		},
 		{
-			"type": "cofluent.component.SlaveInterface",
-			"markup": [
-				{
-					"tagName": "path",
-					"selector": "multiInstanceIcon"
-				},
-				{
-					"tagName": "rect",
-					"selector": "body"
-				},
-				{
-					"tagName": "rect",
-					"selector": "header"
-				},
-				{
-					"tagName": "image",
-					"selector": "background"
-				},
-				{
-					"tagName": "path",
-					"selector": "icon"
-				},
-				{
-					"tagName": "image",
-					"selector": "documentIcon"
-				},
-				{
-					"tagName": "text",
-					"selector": "label"
-				},
-				{
-					"tagName": "text",
-					"selector": "txt"
-				}
-			],
-			"position": {
-				"x": 36.00782775878906,
-				"y": 442.0104217529297
-			},
-			"size": {
-				"width": 69,
-				"height": 66
-			},
-			"ports": {
-				"groups": {
-					"port": {
-						"markup": "<rect />",
-						"position": {
-							"name": "top",
-							"args": {
-								"x": 0,
-								"y": 0
-							}
-						}
-					}
-				},
-				"items": [
-					{
-						"group": "port",
-						"args": {},
-						"attrs": {
-							"rect": {
-								"width": 69,
-								"height": 66,
-								"fill": "#ff0000",
-								"fillOpacity": 0,
-								"pointerEvents": "stroke",
-								"strokeWidth": 10,
-								"stroke": "#feb663",
-								"strokeOpacity": 0,
-								"magnet": true
-							}
-						},
-						"z": 3,
-						"id": "_ZhDt7X9vBhZ_bwYWf28Gj_"
-					}
-				]
-			},
-			"angle": 0,
-			"cof_attrs": {
-				"bufferPolicy": {
-					"annotations": {
-						"defaultValue": "FIFO"
-					}
-				},
-				"bufferCapacity": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": "1"
-					}
-				},
-				"availableMemory": {
-					"type": "EString",
-					"annotations": {
-						"defaultUnit": "MB",
-						"defaultValue": "1"
-					}
-				},
-				"bufferReadTime": {
-					"type": "EString",
-					"annotations": {
-						"defaultUnit": "ns",
-						"defaultValue": "1"
-					}
-				},
-				"bufferWriteTime": {
-					"type": "EString",
-					"annotations": {
-						"defaultUnit": "ns",
-						"defaultValue": "1"
-					}
-				},
-				"dynamicPowerConsumption": {
-					"type": "EString",
-					"annotations": {
-						"defaultUnit": "uW",
-						"defaultValue": "0"
-					}
-				},
-				"cost": {
-					"type": "EString",
-					"annotations": {
-						"defaultUnit": "USD",
-						"defaultValue": "0"
-					}
-				},
-				"dynamicResourceLoad": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": "100"
-					}
-				},
-				"concurrency": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": "1"
-					}
-				},
-				"initializations": {
-					"type": "EString",
-					"annotations": {
-						"type": "initializations"
-					}
-				},
-				"includeInheritedHeader": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": ""
-					}
-				},
-				"inheritanceClass": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": ""
-					}
-				},
-				"callToInheritedConstructors": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": ""
-					}
-				},
-				"name": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": "snf_tlm"
-					}
-				},
-				"documentation": {
-					"type": "EString",
-					"annotations": {}
-				},
-				"max": {
-					"type": "RangeLimit",
-					"integerLimit": null,
-					"designParameter": null,
-					"annotations": {}
-				},
-				"beforeWriteComponent": {
-					"type": "EString",
-					"annotations": {
-						"type": "callback"
-					}
-				},
-				"afterWriteComponent": {
-					"type": "EString",
-					"annotations": {
-						"type": "callback"
-					}
-				},
-				"beforeReadComponent": {
-					"type": "EString",
-					"annotations": {
-						"type": "callback"
-					}
-				},
-				"afterReadComponent": {
-					"type": "EString",
-					"annotations": {
-						"type": "callback"
-					}
-				},
-				"beforeWriteInterconnect": {
-					"type": "EString",
-					"annotations": {
-						"type": "callback"
-					}
-				},
-				"afterWriteInterconnect": {
-					"type": "EString",
-					"annotations": {
-						"type": "callback"
-					}
-				},
-				"beforeReadInterconnect": {
-					"type": "EString",
-					"annotations": {
-						"type": "callback"
-					}
-				},
-				"afterReadInterconnect": {
-					"type": "EString",
-					"annotations": {
-						"type": "callback"
-					}
-				},
-				"bufferOverflow": {
-					"type": "EString",
-					"annotations": {
-						"type": "callback"
-					}
-				}
-			},
-			"cof_eClassName": "SlaveInterface",
-			"id": "_s6IWk-ZDA7XA5bIw_IW3ue",
-			"z": 18,
-			"parent": "_3BMXS4kHKfDgWzNs2f049v",
-			"embeds": [
-				"_MPh7GWUCHyF58LVmZJfkH3"
-			],
-			"attrs": {
-				"body": {
-					"strokeWidth": "1"
-				},
-				"header": {
-					"strokeWidth": "1"
-				},
-				"label": {
-					"textWrap": {
-						"text": "snf_tlm"
-					},
-					"fontFamily": "Segoe UI"
-				},
-				"isimIcon": {
-					"xlinkHref": ""
-				},
-				"isimAttributesIcon": {
-					"xlinkHref": ""
-				}
-			}
-		},
-		{
 			"type": "cofluent.component.Port",
 			"markup": [
 				{
@@ -2555,256 +2291,7 @@
 				}
 			],
 			"position": {
-				"x": 92.00782775878906,
-				"y": 430.0104217529297
-			},
-			"size": {
-				"width": 12,
-				"height": 12
-			},
-			"ports": {
-				"groups": {
-					"outputActions_inputActions_inputSelectorInputs_outputSelectorOutputs_relations_port_ports_operations": {
-						"markup": "<rect />",
-						"position": {
-							"name": "top",
-							"args": {
-								"x": 0,
-								"y": 0
-							}
-						}
-					}
-				},
-				"items": [
-					{
-						"group": "outputActions_inputActions_inputSelectorInputs_outputSelectorOutputs_relations_port_ports_operations",
-						"attrs": {
-							"rect": {
-								"width": 12,
-								"height": 12,
-								"fill": "#ff0000",
-								"fillOpacity": 0,
-								"pointerEvents": "stroke",
-								"strokeWidth": 10,
-								"stroke": "#feb663",
-								"strokeOpacity": 0,
-								"magnet": true
-							}
-						},
-						"z": -1,
-						"id": "_dX9eTU1sTGJJYTMkHDc0bn"
-					}
-				]
-			},
-			"angle": 0,
-			"cof_attrs": {
-				"type": {
-					"annotations": {
-						"defaultValue": "BUS"
-					},
-					"display": "none"
-				},
-				"direction": {
-					"annotations": {
-						"defaultValue": "IN_OUT"
-					},
-					"display": "none"
-				},
-				"size": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": ""
-					},
-					"display": "none"
-				},
-				"synchronizeName": {
-					"type": "EBoolean",
-					"annotations": {
-						"defaultValue": "true"
-					}
-				},
-				"protocol": {
-					"annotations": {
-						"defaultValue": "COFLUENT"
-					}
-				},
-				"socketType": {
-					"annotations": {
-						"defaultValue": "INITIATOR"
-					},
-					"display": "none"
-				},
-				"constructorArguments": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": ""
-					}
-				},
-				"templateArguments": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": ""
-					}
-				},
-				"vector": {
-					"type": "EBoolean",
-					"annotations": {
-						"defaultValue": "false"
-					}
-				},
-				"requestPipelineDepth": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": "1"
-					},
-					"display": "none"
-				},
-				"name": {
-					"type": "EString",
-					"annotations": {
-						"defaultValue": "CHI_ICN_TLM"
-					}
-				},
-				"documentation": {
-					"type": "EString",
-					"annotations": {}
-				}
-			},
-			"cof_eClassName": "Port",
-			"id": "_MPh7GWUCHyF58LVmZJfkH3",
-			"z": 19,
-			"parent": "_s6IWk-ZDA7XA5bIw_IW3ue",
-			"attrs": {
-				"label": {
-					"textWrap": {
-						"text": "CHI_ICN_TLM:BS(In/out)"
-					}
-				}
-			}
-		},
-		{
-			"type": "link",
-			"source": {
-				"id": "_MPh7GWUCHyF58LVmZJfkH3",
-				"port": "_dX9eTU1sTGJJYTMkHDc0bn"
-			},
-			"target": {
-				"id": "_BXH_-Z9HVPZKTdCf6mAyx7",
-				"port": "_dX9eTU1sTGJJYTMkHDc0bn"
-			},
-			"markup": [
-				{
-					"tagName": "path",
-					"selector": "wrapper"
-				},
-				{
-					"tagName": "path",
-					"selector": "core"
-				}
-			],
-			"defaultLabel": {
-				"attrs": {
-					"rect": {
-						"fillOpacity": 0
-					}
-				},
-				"position": {
-					"distance": -30,
-					"args": {
-						"absoluteDistance": true
-					}
-				}
-			},
-			"id": "5da5b405-92a8-4eb0-9e67-ca9c90d76bf6",
-			"z": 20,
-			"vertices": [
-				{
-					"x": 98.00782775878906,
-					"y": 402.0104217529297
-				},
-				{
-					"x": 98.00782775878906,
-					"y": 402.0104217529297
-				}
-			],
-			"pathPoints": [
-				{
-					"x": 98.01,
-					"y": 436.01
-				},
-				{
-					"x": 98.01,
-					"y": 402.0104217529297
-				},
-				{
-					"x": 98.00782775878906,
-					"y": 402.0104217529297
-				},
-				{
-					"x": 98.00782775878906,
-					"y": 388.01021087646484
-				},
-				{
-					"x": 93.01,
-					"y": 388.01021087646484
-				},
-				{
-					"x": 93.01,
-					"y": 374.01
-				}
-			],
-			"parent": "__Ih4lsgmi8FA8sOLk-ImLp",
-			"attrs": {
-				"wrapper": {
-					"connection": true,
-					"fill": "none",
-					"stroke": "#3e69ff",
-					"strokeWidth": 5,
-					"strokeOpacity": 1,
-					"strokeLinejoin": "bevel"
-				},
-				"core": {
-					"connection": true,
-					"fill": "none",
-					"stroke": "#ffffff",
-					"strokeWidth": 3,
-					"strokeDasharray": "",
-					"strokeLinejoin": "bevel",
-					"targetMarker": {
-						"type": "path",
-						"fill": "#ffffff",
-						"stroke": "#3e69ff",
-						"stroke-width": 1,
-						"d": "M 8 -8 -2 0 8 8 -2 0 Z"
-					},
-					"sourceMarker": {
-						"type": "path",
-						"fill": "#ffffff",
-						"stroke": "#3e69ff",
-						"stroke-width": 1,
-						"d": "M 8 -8 -2 0 8 8 -2 0 Z"
-					}
-				}
-			}
-		},
-		{
-			"type": "cofluent.component.Port",
-			"markup": [
-				{
-					"tagName": "rect",
-					"selector": "body"
-				},
-				{
-					"tagName": "image",
-					"selector": "documentIcon"
-				},
-				{
-					"tagName": "text",
-					"selector": "label"
-				}
-			],
-			"position": {
-				"x": 87.00782775878906,
+				"x": 86,
 				"y": 368.0104217529297
 			},
 			"size": {

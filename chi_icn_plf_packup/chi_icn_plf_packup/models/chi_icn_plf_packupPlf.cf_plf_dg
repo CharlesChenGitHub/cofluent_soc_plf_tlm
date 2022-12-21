@@ -380,7 +380,7 @@
 				"inheritanceClass": {
 					"type": "EString",
 					"annotations": {
-						"defaultValue": "iconnect_chi<20 comma 10 comma 2 comma 0>"
+						"defaultValue": "iconnect_chi<20 comma 10 comma 1 comma 0>"
 					}
 				},
 				"callToInheritedConstructors": {
@@ -3177,7 +3177,7 @@
 			"attrs": {
 				"label": {
 					"textWrap": {
-						"text": "CHI_ICN_TLM"
+						"text": "CHI_ICN_TLM:BS(In/out)"
 					}
 				}
 			}
@@ -3418,7 +3418,7 @@
 			"attrs": {
 				"label": {
 					"textWrap": {
-						"text": "CHI_ICN_TLM"
+						"text": "CHI_ICN_TLM:BS(In/out)"
 					}
 				}
 			}
@@ -5210,7 +5210,7 @@
 			"attrs": {
 				"label": {
 					"textWrap": {
-						"text": "CHI_ICN_TLM"
+						"text": "CHI_ICN_TLM:BS(In/out)"
 					}
 				}
 			}
@@ -5595,7 +5595,7 @@
 			"attrs": {
 				"label": {
 					"textWrap": {
-						"text": "CHI_ICN_TLM"
+						"text": "CHI_ICN_TLM:BS(In/out)"
 					}
 				}
 			}

@@ -15,7 +15,7 @@
                 "${PROJECT_FOLDER}/external/include/riscv-vp/common",
                 "${PROJECT_FOLDER}/external/include/riscv-vp/softfloat-dist/include/softfloat"
             ],
-            "CXXStandard":"c++14",
+            "CXXStandard": "c++14",
             "sourceLocations": [
                 "${PROJECT_FOLDER}/external/src"
             ],
@@ -26,9 +26,12 @@
                 "softfloat"
             ],
             "symbols": [
-                "SC_CPLUSPLUS=201103L"
+                "SC_CPLUSPLUS=201103L",
+                "COFS_MODEL_TYPE_PLATFORM_MODELING"
             ],
-            "CXXFLAGS": ["-g"],
+            "CXXFLAGS": [
+                "-g"
+            ],
             "LDFLAGS": [],
             "preBuild": "",
             "postBuild": "",

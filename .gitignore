@@ -1,11 +1,13 @@
-chi_icn_plf_packup/chi_icn_plf_packup/release/*
-chi_icn_plf_packup/chi_icn_plf_packup/gen-sysc/*
+/chi_icn_plf_packup/chi_icn_plf_packup/release/
+/chi_icn_plf_packup/chi_icn_plf_packup/gen-sysc/
 
-chi_icn_Sys/chi_icn_Sys/gen-sysc/*
-chi_icn_Sys/chi_icn_Sys/release/*
+/chi_icn_Sys/chi_icn_Sys/gen-sysc/
+/chi_icn_Sys/chi_icn_Sys/release/
 
-!chi_icn_Sys/gen-sysc/chi_icn_SysSys/include/
-!chi_icn_Sys/gen-sysc/chi_icn_SysSys/src/
-!chi_icn_Sys/release/chi_icn_SysSys.cf_sysBuild_0/CMakeLists.txt
-!chi_icn_Sys/release/chi_icn_SysSys.cf_sysBuild_0/Makefile
-*/.vscode/
+!/chi_icn_Sys/chi_icn_Sys/gen-sysc/chi_icn_SysSys/include/*
+!/chi_icn_Sys/chi_icn_Sys/gen-sysc/chi_icn_SysSys/src/*
+!/chi_icn_Sys/chi_icn_Sys/release/chi_icn_SysSys.cf_sysBuild_0/CMakeLists.txt
+!/chi_icn_Sys/chi_icn_Sys/release/chi_icn_SysSys.cf_sysBuild_0/Makefile
+!/chi_icn_plf_packup/chi_icn_plf_packup/gen-sysc/chi_icn_plf_packupPlf/include/*
+!/chi_icn_plf_packup/chi_icn_plf_packup/gen-sysc/chi_icn_plf_packupPlf/src/*
+*/.vscode/*

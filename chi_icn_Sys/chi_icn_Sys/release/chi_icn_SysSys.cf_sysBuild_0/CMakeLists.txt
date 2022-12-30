@@ -34,9 +34,6 @@ INCLUDE(
     ListOfSources.cmake
 )
 
-
-find_package(Boost REQUIRED COMPONENTS iostreams)
-
 # Header directories
 INCLUDE_DIRECTORIES(
     "/home/sunjiaqi/cof-workspace/cofluent_soc_plf_tlm/chi_icn_Sys/chi_icn_Sys/gen-sysc/chi_icn_SysSys/include"
@@ -51,7 +48,6 @@ INCLUDE_DIRECTORIES(
     "/home/sunjiaqi/cof-pack/cof-scl-isim-9.1.0-221024_nolic/include/cofluent_isim"
     "/home/sunjiaqi/cof-pack/cof-scl-isim-9.1.0-221024_nolic/include/isim-attrs-interface"
     "/home/sunjiaqi/cof-pack/cof-scl-isim-9.1.0-221024_nolic/include/systemc"
-    ${Boost_INCLUDE_DIRS}
 )
 
 # Library directories
@@ -60,7 +56,6 @@ LINK_DIRECTORIES(
     "/home/sunjiaqi/cof-workspace/cofluent_soc_plf_tlm/chi_icn_Sys/external/lib"
     "/home/sunjiaqi/cof-pack/cof-scl-isim-9.1.0-221024_nolic/lib/${COFS_LIBS_PATH_FOR_GCC}"
     "/home/sunjiaqi/cof-pack/cof-scl-isim-9.1.0-221024_nolic/lib"
-    ${Boost_LINK_DIRS}
 )
 
 # Library directories
@@ -80,7 +75,7 @@ TARGET_LINK_LIBRARIES(
     dl
     rt
     softfloat
-    ${Boost_LIBRARIES}
+    boost_iostreams
 )
 
 SET_TARGET_PROPERTIES(chi_icn_SysSys PROPERTIES SUFFIX ".exe")

@@ -23,7 +23,8 @@
                 "${PROJECT_FOLDER}/external/lib"
             ],
             "libs": [
-                "softfloat"
+                "softfloat",
+                "boost_iostreams"
             ],
             "symbols": [
                 "SC_CPLUSPLUS=201103L",
@@ -86,5 +87,41 @@
     "CofSetting.Path.Variables": {
         "PROJECT_FOLDER": "/home/sunjiaqi/cof-workspace/cofluent_soc_plf_tlm/chi_icn_Sys",
         "COF_SCL_PATH": "/home/sunjiaqi/cof-pack/cof-scl-isim-9.1.0-221024_nolic"
-    }
+    },
+    "chi_icn_Sys/chi_icn_Sys/models/chi_icn_SysSys.cf_sys_dg": [
+        {
+            "buildName": "chi_icn_SysSys.cf_sys_dgBuild_0",
+            "fastBuild": true,
+            "buildMode": "release",
+            "compiler": "gcc",
+            "sclProfile": "",
+            "parallelBuild": true,
+            "includePaths": [],
+            "sourceLocations": [],
+            "libPaths": [],
+            "libs": [],
+            "symbols": [],
+            "CXXFLAGS": [],
+            "LDFLAGS": [],
+            "preBuild": "",
+            "postBuild": "",
+            "active": true,
+            "conan": {
+                "enable": false,
+                "version": "0.0.1",
+                "createConanPackage": false,
+                "generateSystemCIP": false,
+                "conanPackages": [],
+                "resourcePaths": [],
+                "extraInstallParameters": " --build=missing ",
+                "extraCreateParameters": "",
+                "extraEnvPrefix": ""
+            },
+            "isim": {
+                "enableISIM": false,
+                "simicsClassName": "",
+                "EXTRA_MODULE_PATH": []
+            }
+        }
+    ]
 }

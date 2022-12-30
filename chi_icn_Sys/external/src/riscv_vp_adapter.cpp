@@ -84,7 +84,7 @@ RiscvVpAdapter::RiscvVpAdapter() ://改，不带参数，在构造函数内把bu
     sc_module(sc_core::sc_module_name(("riscv_vp_adapter_" + to_string(0)).c_str())),
     core(0),
     //mem(nullptr),bld.mem
-    loader("basic_c_test"),//bld.input_program_.c_str()
+    loader("../../../external/lib/basic_c_test"),//bld.input_program_.c_str()
     iss_mem_if("MemoryInterface", core),
     sys("SyscallHandler"),
     clint("CLINT"),

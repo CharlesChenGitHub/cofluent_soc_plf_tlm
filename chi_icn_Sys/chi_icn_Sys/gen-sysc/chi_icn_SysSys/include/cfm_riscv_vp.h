@@ -48,7 +48,6 @@ public:
 public:
 	/// \name input/output ports
 	//@{
-	//p_bus_connector_st1_t p_bus_connector_st1;
 	//@}
 
 	/// after active callback

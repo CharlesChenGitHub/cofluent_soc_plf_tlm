@@ -24,10 +24,10 @@ using namespace cf_core;
 cfm_sn_tlm::cfm_sn_tlm(sc_core::sc_module_name name) :
 		/*Start of 'Inherited classes call' from sn_tlm's model property generated code*/
 		SlaveNode_F(name)
-		/*End of 'Inherited classes call' from sn_tlm's model property generated code*/
-		/*
-		, p_bus_CHI_ICN_TLM("p_bus_CHI_ICN_TLM"), p_bus_connector_st2(
-				"p_bus_connector_st2")*/ {
+/*End of 'Inherited classes call' from sn_tlm's model property generated code*/
+/*, p_bus_CHI_ICN_TLM("p_bus_CHI_ICN_TLM")*/
+/*, p_bus_connector_st2("p_bus_connector_st2")*/
+{
 	cf_processor::init();
 
 	//<#!@READ-ONLY-SECTION-END@!#>

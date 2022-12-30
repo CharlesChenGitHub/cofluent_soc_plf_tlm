@@ -85,45 +85,9 @@ cfm_chi_icn_syssys::cfm_chi_icn_syssys(sc_core::sc_module_name name) :
 	CF_PROC_CB_AFTER_ACTIVE((*sn_tlm),
 			cfm_sn_tlm::itc_proc_sn_tlm_cb_after_active);
 
-	/*
 	// processor after inactive callback
 	CF_PROC_CB_AFTER_INACTIVE((*sn_tlm),
 			cfm_sn_tlm::itc_proc_sn_tlm_cb_after_inactive);
-
-	CF_COMM_CB_BUS_BEFORE_ARBITRATION((bus_CHI_ICN_TLM),
-			cfm_chi_icn_tlm::itc_bus_CHI_ICN_TLM_cb_before_arbitration);
-
-	CF_COMM_CB_BUS_AFTER_ARBITRATION((bus_CHI_ICN_TLM),
-			cfm_chi_icn_tlm::itc_bus_CHI_ICN_TLM_cb_after_arbitration);
-
-	CF_COMM_CB_BUS_BEFORE_TRANSFER((bus_CHI_ICN_TLM),
-			cfm_chi_icn_tlm::itc_bus_CHI_ICN_TLM_cb_before_transfer);
-
-	CF_COMM_CB_BUS_AFTER_TRANSFER((bus_CHI_ICN_TLM),
-			cfm_chi_icn_tlm::itc_bus_CHI_ICN_TLM_cb_after_transfer);
-	CF_COMM_CB_BUS_BEFORE_ARBITRATION((bus_connector_st1),
-			cfm_connector_st1::itc_bus_connector_st1_cb_before_arbitration);
-
-	CF_COMM_CB_BUS_AFTER_ARBITRATION((bus_connector_st1),
-			cfm_connector_st1::itc_bus_connector_st1_cb_after_arbitration);
-
-	CF_COMM_CB_BUS_BEFORE_TRANSFER((bus_connector_st1),
-			cfm_connector_st1::itc_bus_connector_st1_cb_before_transfer);
-
-	CF_COMM_CB_BUS_AFTER_TRANSFER((bus_connector_st1),
-			cfm_connector_st1::itc_bus_connector_st1_cb_after_transfer);
-	CF_COMM_CB_BUS_BEFORE_ARBITRATION((bus_connector_st2),
-			cfm_connector_st2::itc_bus_connector_st2_cb_before_arbitration);
-
-	CF_COMM_CB_BUS_AFTER_ARBITRATION((bus_connector_st2),
-			cfm_connector_st2::itc_bus_connector_st2_cb_after_arbitration);
-
-	CF_COMM_CB_BUS_BEFORE_TRANSFER((bus_connector_st2),
-			cfm_connector_st2::itc_bus_connector_st2_cb_before_transfer);
-
-	CF_COMM_CB_BUS_AFTER_TRANSFER((bus_connector_st2),
-			cfm_connector_st2::itc_bus_connector_st2_cb_after_transfer);
-	*/
 
 	// connections
 	//model: bridge_rn's connector_st1 is straming interface 

@@ -24,9 +24,9 @@ using namespace cf_core;
 cfm_riscv_vp::cfm_riscv_vp(sc_core::sc_module_name name) :
 		/*Start of 'Inherited classes call' from riscv_vp's model property generated code*/
 		riscv_vp_adapter_wrapper(name)
-		/*End of 'Inherited classes call' from riscv_vp's model property generated code*/
-		//, p_bus_connector_st1("p_bus_connector_st1")
-		{
+/*End of 'Inherited classes call' from riscv_vp's model property generated code*/
+/*, p_bus_connector_st1("p_bus_connector_st1")*/
+{
 	cf_processor::init();
 
 	//<#!@READ-ONLY-SECTION-END@!#>

@@ -24,9 +24,9 @@ using namespace cf_core;
 cfm_mem_tlm::cfm_mem_tlm(sc_core::sc_module_name name) :
 		/*Start of 'Inherited classes call' from mem_tlm's model property generated code*/
 		memory(name)
-		/*End of 'Inherited classes call' from mem_tlm's model property generated code*/
-		//, p_bus_connector_st2("p_bus_connector_st2") 
-		{
+/*End of 'Inherited classes call' from mem_tlm's model property generated code*/
+/*, p_bus_connector_st2("p_bus_connector_st2")*/
+{
 	cf_processor::init();
 
 	//<#!@READ-ONLY-SECTION-END@!#>

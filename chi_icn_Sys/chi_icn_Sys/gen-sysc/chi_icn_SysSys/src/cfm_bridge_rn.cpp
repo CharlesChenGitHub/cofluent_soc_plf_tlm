@@ -24,10 +24,10 @@ using namespace cf_core;
 cfm_bridge_rn::cfm_bridge_rn(sc_core::sc_module_name name) :
 		/*Start of 'Inherited classes call' from bridge_rn's model property generated code*/
 		cache_chi_wrapper(name)
-		/*End of 'Inherited classes call' from bridge_rn's model property generated code*/
-		/*
-		, p_bus_connector_st1("p_bus_connector_st1"), p_bus_CHI_ICN_TLM(
-				"p_bus_CHI_ICN_TLM") */{
+/*End of 'Inherited classes call' from bridge_rn's model property generated code*/
+/*, p_bus_connector_st1("p_bus_connector_st1")*/
+/*, p_bus_CHI_ICN_TLM("p_bus_CHI_ICN_TLM")*/
+{
 	cf_processor::init();
 
 	//<#!@READ-ONLY-SECTION-END@!#>

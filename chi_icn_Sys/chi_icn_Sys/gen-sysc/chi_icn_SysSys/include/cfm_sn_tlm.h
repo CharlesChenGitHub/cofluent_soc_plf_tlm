@@ -51,10 +51,6 @@ public:
 public:
 	/// \name input/output ports
 	//@{
-	/*
-	p_bus_CHI_ICN_TLM_t p_bus_CHI_ICN_TLM;
-	p_bus_connector_st2_t p_bus_connector_st2;
-	*/
 	//@}
 
 	/// after active callback

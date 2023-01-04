@@ -1,0 +1,46 @@
+<cofluent:Platform xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cofluent="http://cofluent.intel.com/cofluent/1.0.0" xmi:version="2.0" soCsimulationMode="PureTLM2" cyclePeriod="10 ns" voltage="3 V" socketId="" dieId="" definitions="//connect RN-icn&#10;//RN.rnf.port &lt;-bind-&gt; icn.port_RN_F[0]-&gt;socket&#10;void customized_soc_bind(cfm_chi_icn_tlm&amp; TLMBus, cfm_tg_rnf_tlm* TLMInitiator, int i) {&#10;&#9;//(TLMInitiator-&gt;socket).bind(*(TLMBus.t_sk[0]));&#10;&#9;&#9;(TLMInitiator-&gt;rnf)-&gt;port.txreq_init_socket.bind((TLMBus.port_RN_F[i])-&gt;rxreq_tgt_socket);&#10;&#9;&#9;(TLMInitiator-&gt;rnf)-&gt;port.txrsp_init_socket.bind((TLMBus.port_RN_F[i])-&gt;rxrsp_tgt_socket);&#10;&#9;&#9;(TLMInitiator-&gt;rnf)-&gt;port.txdat_init_socket.bind((TLMBus.port_RN_F[i])-&gt;rxdat_tgt_socket);&#10;&#10;&#9;&#9;(TLMBus.port_RN_F[i])-&gt;txrsp_init_socket.bind((TLMInitiator-&gt;rnf)-&gt;port.rxrsp_tgt_socket);&#10;&#9;&#9;(TLMBus.port_RN_F[i])-&gt;txdat_init_socket.bind((TLMInitiator-&gt;rnf)-&gt;port.rxdat_tgt_socket);&#10;&#9;&#9;(TLMBus.port_RN_F[i])-&gt;txsnp_init_socket.bind((TLMInitiator-&gt;rnf)-&gt;port.rxsnp_tgt_socket);&#10;}&#10;&#10;//connect SN(memory)-icn&#10;//SN.socket &lt;-bind-&gt; icn.port_SN[0]-&gt;socket&#10;//mem_sn(cfm_mem_SN &lt;-SlaveNode_F)  SlaveNode_F.sockets&#10;void customized_soc_bind(cfm_chi_icn_tlm&amp; TLMBus, cfm_sn_tlm* TLMMemory) {&#10;&#9;//TLMBus.memmap(0x40000000ULL, 0x100 - 1,ADDRMODE_RELATIVE, -1, TLMMemory-&gt;init_socket);&#10;&#9;TLMMemory-&gt;txrsp_init_socket.bind((TLMBus.port_SN)-&gt;rxrsp_tgt_socket);&#10;&#9;TLMMemory-&gt;txdat_init_socket.bind((TLMBus.port_SN)-&gt;rxdat_tgt_socket);&#10;&#10;&#9;(TLMBus.port_SN)-&gt;txreq_init_socket.bind(TLMMemory-&gt;rxreq_tgt_socket);&#10;&#9;(TLMBus.port_SN)-&gt;txdat_init_socket.bind(TLMMemory-&gt;rxdat_tgt_socket);&#10;&#10;&#9;//TLMMemory-&gt;init_socket(TLMMemory-&gt;mem.socket);&#10;}&#10;/*&#10;void cfm_connector_st::bind(cfm_mem_tlm* mem_tlm,cfm_sn_tlm* sn_tlm ){&#10;    //sn_tlm-&gt;init_socket(mem_tlm-&gt;socket);&#10;&#9;sn_tlm-&gt;init_socket.bind(mem_tlm-&gt;socket);&#10;&#10;}&#10;*/" name="chi_icn_sysSys" xmi:id="_Ukp1KxUCzidOMmpwJ0nWja">
+  <refinement name="chi_icn_sysSys" xsi:type="cofluent:Structure" xmi:id="_TQC4HdggUnZdy3HahXxThn">
+    <relations concurrency="1" connectionProtocol="Bus" arbitrationProtocol="FIFO" arbitrationTime="10 ns" transferTime="10 ns" voltage=" V" staticPowerConsumption="0 uW" dynamicPowerConsumption="0 uW" cost="1 USD" dynamicResourceLoad="100" includes="#define comma ," includeInheritedHeader="iconnect-chi.h" inheritanceClass="iconnect_chi&lt;20 comma 10 comma 2 comma 0&gt;" callToInheritedConstructors="iconnect_chi(name)" name="CHI_ICN_TLM" xmi:id="_WdDjUtLvJ3XCEbId_kM-p8" xsi:type="cofluent:Bus" ports="_xtPJc1d9e_HmWznng5GpA0 _5thgQ7DPOYUY6T-Lz3zqz4"/>
+    <relations concurrency="1" connectionProtocol="Streaming" arbitrationProtocol="FIFO" arbitrationTime="10 ns" transferTime="10 ns" voltage=" V" staticPowerConsumption="0 uW" dynamicPowerConsumption="0 uW" cost="1 USD" dynamicResourceLoad="100" declarations="&#10;public : void bind(cfm_mem_tlm* mem_tlm,cfm_sn_tlm* sn_tlm){&#10;&#9;//sn_tlm-&gt;init_socket(mem_tlm-&gt;socket);&#10;&#9;(sn_tlm-&gt;init_socket).bind(mem_tlm-&gt;socket);&#10;&#9;cout&lt;&lt;&quot;bind done&quot;&lt;&lt;endl;&#10;};&#10;" includes="#include &quot;cfm_mem_tlm.h&quot;&#10;#include &quot;cfm_sn_tlm.h&quot;" definitions="" includeInheritedHeader="empty.h" inheritanceClass="empty" callToInheritedConstructors="empty()" name="connector_st" xmi:id="_axpW-P41MZInf8CWGRbkCj" xsi:type="cofluent:Bus" ports="_V12n8CM6FmrbWFo3ZsGfcn _kDtdAu1QY_iHiL1lWgQi8R"/>
+    <models cyclePeriod=" ns" speedUpRatio="1" voltage=" V" staticPowerConsumption=" uW" dynamicPowerConsumption=" uW" cost="1 USD" availableMemory="1 MB" staticResourceLoad="0" soCInterface="PureTLM2" definitions="" includeInheritedHeader="rnf_subsys.h" inheritanceClass="rnf_subsys" callToInheritedConstructors="rnf_subsys(name)" name="tg_rnf_tlm" xmi:id="_DKG6_SFqneSx0eFfhiy5OF" xsi:type="cofluent:Processor">
+      <ports type="BUS" direction="IN_OUT" size="" synchronizeName="true" vector="false" requestPipelineDepth="1" name="CHI_ICN_TLM" xmi:id="_5thgQ7DPOYUY6T-Lz3zqz4" relations="_WdDjUtLvJ3XCEbId_kM-p8" ports="_KAs0JSWWfT8-aN7mgLoE7K">
+        <constructorArguments/>
+        <templateArguments/>
+      </ports>
+      <refinement name="tg_rnf_tlmSt" xsi:type="cofluent:Structure" xmi:id="_2TI-2ZH_JBIJIT1NR5g6N3">
+        <models bufferPolicy="FIFO" bufferCapacity="1" availableMemory="1 MB" bufferReadTime="1 ns" bufferWriteTime="1 ns" dynamicPowerConsumption="0 uW" cost="0 USD" dynamicResourceLoad="100" concurrency="1" includeInheritedHeader="" inheritanceClass="" callToInheritedConstructors="" name="rnf_tlm" xmi:id="_tO28-IH676hTIHNfeUIiPD" xsi:type="cofluent:MasterInterface">
+          <ports type="BUS" direction="IN_OUT" size="" synchronizeName="true" vector="false" requestPipelineDepth="1" name="CHI_ICN_TLM" xmi:id="_KAs0JSWWfT8-aN7mgLoE7K" port="_5thgQ7DPOYUY6T-Lz3zqz4">
+            <constructorArguments/>
+            <templateArguments/>
+          </ports>
+        </models>
+      </refinement>
+      <max xmi:id="_akcFo3WdCPLKtTjt1urbkt" integerLimit="1"/>
+      <min xmi:id="_RbcKdjVb9hRHa_bFw9NGKI" integerLimit="0"/>
+    </models>
+    <models cyclePeriod=" ns" speedUpRatio="1" voltage=" V" staticPowerConsumption=" uW" dynamicPowerConsumption=" uW" cost="1 USD" availableMemory="1 MB" staticResourceLoad="0" soCInterface="PureTLM2" includes="#define comma ," includeInheritedHeader="sn-chi.h" inheritanceClass="SlaveNode_F&lt;10 comma 20&gt;" callToInheritedConstructors="SlaveNode_F(name)" name="sn_tlm" xmi:id="_jHT3lpDtI6rZVEJGv-kJ7p" xsi:type="cofluent:Processor">
+      <ports type="BUS" direction="IN_OUT" size="" synchronizeName="true" vector="false" requestPipelineDepth="1" name="CHI_ICN_TLM" xmi:id="_xtPJc1d9e_HmWznng5GpA0" relations="_WdDjUtLvJ3XCEbId_kM-p8" ports="_uy5QqctQgkm_GZr9KlkkVC">
+        <constructorArguments/>
+        <templateArguments/>
+      </ports>
+      <ports type="BUS" direction="IN_OUT" size="" synchronizeName="true" vector="false" requestPipelineDepth="1" name="connector_st" xmi:id="_V12n8CM6FmrbWFo3ZsGfcn" relations="_axpW-P41MZInf8CWGRbkCj">
+        <constructorArguments/>
+        <templateArguments/>
+      </ports>
+      <refinement name="sn_tlmSt" xsi:type="cofluent:Structure" xmi:id="_TTnKQ-a34lAXgpTSBvrwNT">
+        <models bufferPolicy="FIFO" bufferCapacity="1" availableMemory="1 MB" bufferReadTime="1 ns" bufferWriteTime="1 ns" dynamicPowerConsumption="0 uW" cost="0 USD" dynamicResourceLoad="100" concurrency="1" includeInheritedHeader="" inheritanceClass="" callToInheritedConstructors="" name="snf_tlm" xmi:id="_-5Ln68TgVBzxaDQ9jbvT3L" xsi:type="cofluent:SlaveInterface">
+          <ports type="BUS" direction="IN_OUT" size="" synchronizeName="true" vector="false" requestPipelineDepth="1" name="CHI_ICN_TLM" xmi:id="_uy5QqctQgkm_GZr9KlkkVC" port="_xtPJc1d9e_HmWznng5GpA0">
+            <constructorArguments/>
+            <templateArguments/>
+          </ports>
+        </models>
+      </refinement>
+    </models>
+    <models cyclePeriod=" ns" speedUpRatio="1" voltage=" V" staticPowerConsumption=" uW" dynamicPowerConsumption=" uW" cost="1 USD" availableMemory="1 MB" staticResourceLoad="0" soCInterface="PureTLM2" includeInheritedHeader="memory.h" inheritanceClass="memory" callToInheritedConstructors="memory(name)" name="mem_tlm" xmi:id="_LKw_U3ANhDQNeko1kEmd_C" xsi:type="cofluent:Processor">
+      <ports type="BUS" direction="IN_OUT" size="" synchronizeName="true" vector="false" requestPipelineDepth="1" name="connector_st" xmi:id="_kDtdAu1QY_iHiL1lWgQi8R" relations="_axpW-P41MZInf8CWGRbkCj">
+        <constructorArguments/>
+        <templateArguments/>
+      </ports>
+    </models>
+  </refinement>
+</cofluent:Platform>

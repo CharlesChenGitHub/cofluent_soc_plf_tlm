@@ -1,0 +1,189 @@
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:version="2.0">
+  <notation:Diagram xmi:id="_-cnI_le49uC7yLXbJ45a4u" visible="true" type="CofluentPlatform" name="chi_icn_sysSys" measurementUnit="Pixel">
+    <styles xsi:type="notation:DiagramStyle" xmi:id="_bb4Hxay4u0QdaBBlXGB19T" pageX="0" pageY="0" pageWidth="100" pageHeight="100" description=""/>
+    <element href="chi_icn_sysSys.cf_plf#_TQC4HdggUnZdy3HahXxThn"/>
+    <children xmi:id="_wK4GYp1-UiLDeXmGzFbMMm" visible="true" type="1003">
+      <children xmi:id="_kxMkC8PgDSlCfChAPDpNAv" visible="true" type="1503">
+        <styles xsi:type="notation:ShapeStyle" xmi:id="_HU1z7T47UMonspK-blfLCd" fontColor="0" fontName="Segoe UI" fontHeight="8" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="0" lineWidth="-1" roundedBendpointsRadius="0"/>
+        <layoutConstraint xsi:type="notation:Location" xmi:id="_IIvKvzrBQ2UiDCDVWaTuAv" x="8" y="40"/>
+      </children>
+      <styles xsi:type="notation:FontStyle" xmi:id="_19YTTWpkcNTf7C9ZKDKSxw" fontColor="0" fontName="Segoe UI" fontHeight="8" bold="false" italic="false" underline="false" strikeThrough="false"/>
+      <styles xsi:type="notation:LineStyle" xmi:id="_ibe48vyy-A3IXh8Ay-JQ2V" lineColor="0" lineWidth="-1"/>
+      <styles xsi:type="notation:DescriptionStyle" xmi:id="_E_em18dXf1DqRCY7srwboh" description=""/>
+      <styles xsi:type="notation:IntValueStyle" xmi:id="_WCxKL0TKiW-XZKYlT4vK5V" name="Rotated_Style"/>
+      <element href="chi_icn_sysSys.cf_plf#_WdDjUtLvJ3XCEbId_kM-p8"/>
+      <layoutConstraint xsi:type="notation:Bounds" xmi:id="_cbfmfccx23QXHvBZKbo7Ej" x="-120" y="160" width="-1" height="-1"/>
+    </children>
+    <children xmi:id="_UjJLkgLOUp__xLV9KV7NVO" visible="true" type="1003">
+      <children xmi:id="_9sQKmasqeYuyay8wd3YLdF" visible="true" type="1503">
+        <styles xsi:type="notation:ShapeStyle" xmi:id="_o6ZbPyLoygDwp7Gxpg6Z4l" fontColor="0" fontName="Segoe UI" fontHeight="8" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="0" lineWidth="-1" roundedBendpointsRadius="0"/>
+        <layoutConstraint xsi:type="notation:Location" xmi:id="_6jf7A36-ydKF2aDs-GD6I3" x="8" y="40"/>
+      </children>
+      <styles xsi:type="notation:FontStyle" xmi:id="_iJpwKsTcAIiq5FUtplSSJg" fontColor="0" fontName="Segoe UI" fontHeight="8" bold="false" italic="false" underline="false" strikeThrough="false"/>
+      <styles xsi:type="notation:LineStyle" xmi:id="_4_nx-YNClQzfxdOdKpJB9e" lineColor="0" lineWidth="-1"/>
+      <styles xsi:type="notation:DescriptionStyle" xmi:id="_QIkWp2zR0hVzDAwMs2VG27" description=""/>
+      <styles xsi:type="notation:IntValueStyle" xmi:id="_ZH_76UwDhD2Rb4jzljr7RI" name="Rotated_Style" intValue="90"/>
+      <element href="chi_icn_sysSys.cf_plf#_axpW-P41MZInf8CWGRbkCj"/>
+      <layoutConstraint xsi:type="notation:Bounds" xmi:id="_nbYKP2P_ougfSpW3VuwzNS" x="193" y="329" width="40" height="40"/>
+    </children>
+    <children xmi:id="_vECzHcGCTvuJJhK6_pjtSr" visible="true" type="1101">
+      <children xmi:id="_yYXuDp1z8uGL2Gx2aNZzF4" visible="true" type="4265"/>
+      <children xmi:id="_8Em-cpKOo7WaE_ML6Ej7V5" visible="true" type="3124">
+        <styles xsi:type="notation:ShapeStyle" xmi:id="_LAviHu_wi7IZuqN9BzegsC" fontColor="0" fontName="Segoe UI" fontHeight="8" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="0" lineWidth="-1" roundedBendpointsRadius="0"/>
+        <element href="chi_icn_sysSys.cf_plf#_5thgQ7DPOYUY6T-Lz3zqz4"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_A61DxRdHzjdSpYZ2mj2zdb" x="56" y="167" width="-1" height="-1"/>
+      </children>
+      <children xmi:id="_o3U-5XVFfBQ4zRXKAFNGS9" visible="true" type="2133">
+        <children xmi:id="_SM3IJu2zZmWaMeWcYh6uAC" visible="true" type="4270">
+          <layoutConstraint xsi:type="notation:Location" xmi:id="_rIsuYJy4I0W6hm_jaZFItS" x="0" y="5"/>
+        </children>
+        <children xmi:id="_9958TlaqY3F1bKeCznXIzn" visible="true" type="5201">
+          <children xmi:id="_Wrq3mjl61MQwq7bEOMagHu" visible="true" type="3027">
+            <children xmi:id="_4ca__vUZI93PGqJ1_QbzVZ" visible="true" type="4266"/>
+            <children xmi:id="_FE2ygJ-ybuPFbZyQnaAKZQ" visible="true" type="3124">
+              <styles xsi:type="notation:ShapeStyle" xmi:id="_R5PYpBA4qrGc0KKUTN-3CK" fontColor="0" fontName="Segoe UI" fontHeight="8" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="0" lineWidth="-1" roundedBendpointsRadius="0"/>
+              <element href="chi_icn_sysSys.cf_plf#_KAs0JSWWfT8-aN7mgLoE7K"/>
+              <layoutConstraint xsi:type="notation:Bounds" xmi:id="_XaQdZlTWQwEJUMnWz6OMcE" x="28" y="64" width="-1" height="-1"/>
+            </children>
+            <styles xsi:type="notation:ShapeStyle" xmi:id="_GwZP5gkFlhtbjIauZBF-9q" fontColor="0" fontName="Segoe UI" fontHeight="8" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="0" lineWidth="-1" roundedBendpointsRadius="0"/>
+            <styles xmi:id="_ZCKxAiNSDnToWtqOXGggzs" xsi:type="notation:MultiDiagramLinkStyle"/>
+            <element href="chi_icn_sysSys.cf_plf#_tO28-IH676hTIHNfeUIiPD"/>
+            <layoutConstraint xsi:type="notation:Bounds" xmi:id="_pPMq8KI_7vrMZghLdkkFus" x="25" y="41" width="75" height="64"/>
+          </children>
+          <styles xsi:type="notation:SortingStyle" xmi:id="_OEJABv6e7jt9soq8l5bnqv" sorting="None"/>
+          <styles xsi:type="notation:FilteringStyle" xmi:id="_yg_RAH_d-x29YCCX3chrqZ" filtering="None"/>
+        </children>
+        <styles xsi:type="notation:FontStyle" xmi:id="_0fliKGH2wY-HA18FWlBn06" fontColor="0" fontName="Segoe UI" fontHeight="8" bold="false" italic="false" underline="false" strikeThrough="false"/>
+        <styles xsi:type="notation:LineStyle" xmi:id="_6jgaOtw7EFmBN2itNLe4Ee" lineColor="0" lineWidth="-1"/>
+        <styles xsi:type="notation:DescriptionStyle" xmi:id="_jMTjtrZWZhhr4HCJRKxvly" description=""/>
+        <element href="chi_icn_sysSys.cf_plf#_2TI-2ZH_JBIJIT1NR5g6N3"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_H5OflAp-cyzraw1RIVPcH0" x="0" y="0" width="-1" height="-1"/>
+      </children>
+      <styles xsi:type="notation:ShapeStyle" xmi:id="_KMlSeqcSfhkYqeVfdU2Iu9" fontColor="0" fontName="Segoe UI" fontHeight="8" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="0" lineWidth="-1" roundedBendpointsRadius="0"/>
+      <styles xmi:id="_ZUVVQuIxZ0UoeSwK680D7r" xsi:type="notation:MultiDiagramLinkStyle"/>
+      <element href="chi_icn_sysSys.cf_plf#_DKG6_SFqneSx0eFfhiy5OF"/>
+      <layoutConstraint xsi:type="notation:Bounds" xmi:id="_vKcEigwQsDgv4BiMe_Dzsj" x="98" y="-55" width="139" height="167"/>
+    </children>
+    <children xmi:id="_FiO6H9kvhNWfMC5NtqJM0x" visible="true" type="1101">
+      <children xmi:id="_iU8Y03knQJRbsk_feEwoPU" visible="true" type="4265"/>
+      <children xmi:id="_qQW12X31J6YXvg8Pm16zMx" visible="true" type="3124">
+        <styles xsi:type="notation:ShapeStyle" xmi:id="_X5HT8KG0EjCwAzfKdMwQpr" fontColor="0" fontName="Segoe UI" fontHeight="8" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="0" lineWidth="-1" roundedBendpointsRadius="0"/>
+        <element href="chi_icn_sysSys.cf_plf#_xtPJc1d9e_HmWznng5GpA0"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_LmItBSz05uqd3lVw2m5G1H" x="109" y="-12" width="-1" height="-1"/>
+      </children>
+      <children xmi:id="_H_KTYy5tjG810fRS5Pma9K" visible="true" type="3124">
+        <styles xsi:type="notation:ShapeStyle" xmi:id="_q1rOQqnUx3bCLGAmsmLI93" fontColor="0" fontName="Segoe UI" fontHeight="8" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="0" lineWidth="-1" roundedBendpointsRadius="0"/>
+        <element href="chi_icn_sysSys.cf_plf#_V12n8CM6FmrbWFo3ZsGfcn"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_Fpk_kDpIKfT-XEzEF4r6Jt" x="160" y="60" width="-1" height="-1"/>
+      </children>
+      <children xmi:id="_TLsgbPq7k44D9DmQWw_GEe" visible="true" type="2133">
+        <children xmi:id="_8Ygv06V7jN-6fyvB8ruiV0" visible="true" type="4270">
+          <layoutConstraint xsi:type="notation:Location" xmi:id="_2m9gHzbusrGIWX3s9gTTaZ" x="0" y="5"/>
+        </children>
+        <children xmi:id="_2Bxb1jDe_ezHtYRsOD69Gz" visible="true" type="5201">
+          <children xmi:id="_QsfA0JcHVlJYZpcAaMaT9U" visible="true" type="3028">
+            <children xmi:id="_qJBCPaLTcYL21FuaJ4883L" visible="true" type="4267"/>
+            <children xmi:id="_cdxI92LAQt2E9YFZzUXiZU" visible="true" type="3124">
+              <styles xsi:type="notation:ShapeStyle" xmi:id="_TPS2RIt98URqS3p5DY3-Eu" fontColor="0" fontName="Segoe UI" fontHeight="8" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="0" lineWidth="-1" roundedBendpointsRadius="0"/>
+              <element href="chi_icn_sysSys.cf_plf#_uy5QqctQgkm_GZr9KlkkVC"/>
+              <layoutConstraint xsi:type="notation:Bounds" xmi:id="_OgC2_TBZW537Lkftc85zur" x="56" y="-12" width="-1" height="-1"/>
+            </children>
+            <styles xsi:type="notation:ShapeStyle" xmi:id="_Vc4V_FmGgT-0WeQO4n1BvS" fontColor="0" fontName="Segoe UI" fontHeight="8" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="0" lineWidth="-1" roundedBendpointsRadius="0"/>
+            <styles xmi:id="_wUPXl-N-E4cc7mZ94qurE5" xsi:type="notation:MultiDiagramLinkStyle"/>
+            <element href="chi_icn_sysSys.cf_plf#_-5Ln68TgVBzxaDQ9jbvT3L"/>
+            <layoutConstraint xsi:type="notation:Bounds" xmi:id="_969tCPW6XUeY0xZw50KIcB" x="53" y="31" width="69" height="66"/>
+          </children>
+          <styles xsi:type="notation:SortingStyle" xmi:id="_BfHZA3IdP0kKfZ9XrJUMtr" sorting="None"/>
+          <styles xsi:type="notation:FilteringStyle" xmi:id="_XMT9_PhqS2wjcNuyaosI27" filtering="None"/>
+        </children>
+        <styles xsi:type="notation:FontStyle" xmi:id="_gLoMpcLHZ7wHjDzGpbp1g0" fontColor="0" fontName="Segoe UI" fontHeight="8" bold="false" italic="false" underline="false" strikeThrough="false"/>
+        <styles xsi:type="notation:LineStyle" xmi:id="_auqMO2QsFDx40JdkHBeVQI" lineColor="0" lineWidth="-1"/>
+        <styles xsi:type="notation:DescriptionStyle" xmi:id="_1rdevAHJOGvNx7c7bFnjgr" description=""/>
+        <element href="chi_icn_sysSys.cf_plf#_TTnKQ-a34lAXgpTSBvrwNT"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_JgJci3xoUksILLPSKguAe8" x="0" y="0" width="-1" height="-1"/>
+      </children>
+      <styles xsi:type="notation:ShapeStyle" xmi:id="_blnlhlEc58KmMZ9xft5oPO" fontColor="0" fontName="Segoe UI" fontHeight="8" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="0" lineWidth="-1" roundedBendpointsRadius="0"/>
+      <styles xmi:id="_eXOv8dE_3lP5QmDxIPLi5D" xsi:type="notation:MultiDiagramLinkStyle"/>
+      <element href="chi_icn_sysSys.cf_plf#_jHT3lpDtI6rZVEJGv-kJ7p"/>
+      <layoutConstraint xsi:type="notation:Bounds" xmi:id="_vECshI-Gb_jbMW7ZFhFEXR" x="-9" y="284" width="160" height="140"/>
+    </children>
+    <children xmi:id="_SyE9aIMlAb_ebaRNPgritt" visible="true" type="1101">
+      <children xmi:id="_nw2nlT0wWOhb4KrgcUQ-29" visible="true" type="4265"/>
+      <children xmi:id="_O3OjUgZWR9WBtwXd-8aojt" visible="true" type="3124">
+        <styles xsi:type="notation:ShapeStyle" xmi:id="_3M5txUNkxNpocB8Z-aZFED" fontColor="0" fontName="Segoe UI" fontHeight="8" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="0" lineWidth="-1" roundedBendpointsRadius="0"/>
+        <element href="chi_icn_sysSys.cf_plf#_kDtdAu1QY_iHiL1lWgQi8R"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_y52kVvHfew4MF_4JkhAOKT" x="-12" y="36" width="-1" height="-1"/>
+      </children>
+      <styles xsi:type="notation:ShapeStyle" xmi:id="_GSkSg4I4u5xfWoCTE35bNp" fontColor="0" fontName="Segoe UI" fontHeight="8" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="0" lineWidth="-1" roundedBendpointsRadius="0"/>
+      <styles xmi:id="_G9ZAA27sNtB4pDKqfGh8Oq" xsi:type="notation:MultiDiagramLinkStyle" diagramLinks="_R6MEYC1gU_7DpnBB59IYFO"/>
+      <element href="chi_icn_sysSys.cf_plf#_LKw_U3ANhDQNeko1kEmd_C"/>
+      <layoutConstraint xsi:type="notation:Bounds" xmi:id="_Voz7AJyVLPj78oAfsOOFum" x="279" y="311" width="98" height="98"/>
+    </children>
+    <edges xmi:id="_m6auS7-mdlsX_YmxdD-y3H" visible="true" type="4024" source="_qQW12X31J6YXvg8Pm16zMx" target="_wK4GYp1-UiLDeXmGzFbMMm">
+      <styles xsi:type="notation:ConnectorStyle" xmi:id="_QrvpP6zPq2NE8kXHdpQwp0" roundedBendpointsRadius="0" routing="Rectilinear" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="16738622" lineWidth="-1"/>
+      <element xsi:nil="true"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" xmi:id="_FY_w-kkVds5VAJTgq1QoKt" points="[0,0,0,87]$[0,-37,0,50]$[0,-37,0,50]$[0,-57,0,30]$[0,-57,0,30]$[0,-87,0,0]"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" xmi:id="_0QqObujfwI5A6-Fpf6jXVI" id="(0.43, 1)"/>
+    </edges>
+    <edges xmi:id="_ryGi9AZZ748_yxl1-Z4NSw" visible="true" type="4024" source="_8Em-cpKOo7WaE_ML6Ej7V5" target="_wK4GYp1-UiLDeXmGzFbMMm">
+      <styles xsi:type="notation:ConnectorStyle" xmi:id="_KsSlAJJB9NqvS-MtFSBx2M" roundedBendpointsRadius="0" routing="Rectilinear" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="16738622" lineWidth="-1"/>
+      <element xsi:nil="true"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" xmi:id="_tEOdgVzRZQc4YYg-cGRbqO" points="[0,0,0,-49]$[0,21,0,-27]$[0,21,0,-27]$[0,30,0,-18]$[0,30,0,-18]$[0,49,0,0]"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" xmi:id="_friqEwFrPeNKfN6RhEVKje" id="(0.5429999999999999, 0)"/>
+    </edges>
+    <edges xmi:id="_-LJF8WkHjEpSP9nQrt4B3T" visible="true" type="4024" source="_H_KTYy5tjG810fRS5Pma9K" target="_UjJLkgLOUp__xLV9KV7NVO">
+      <styles xsi:type="notation:ConnectorStyle" xmi:id="_f-S321LVNs74ss5nfCYwZE" roundedBendpointsRadius="0" routing="Rectilinear" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="16738622" lineWidth="-1"/>
+      <element xsi:nil="true"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" xmi:id="_IRQkq9gBruYLR1rr3T7A2O" points="[0,0,-45,1]$[17,0,-27,1]$[17,-1,-27,0]$[45,-1,0,0]"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" xmi:id="_3n6ro84DU-ukiwVGhnG9_n" id="(0.75, 1)"/>
+    </edges>
+    <edges xmi:id="_Kt724HsxDPWSJWLTKPrDJN" visible="true" type="4024" source="_O3OjUgZWR9WBtwXd-8aojt" target="_UjJLkgLOUp__xLV9KV7NVO">
+      <styles xsi:type="notation:ConnectorStyle" xmi:id="_fyrXrWC6MCUnui4sKSc7A7" roundedBendpointsRadius="0" routing="Rectilinear" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="16738622" lineWidth="-1"/>
+      <element xsi:nil="true"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" xmi:id="_rVdWc-4qDQA5S3qVRwNsBs" points="[0,0,48,2]$[-19,0,29,2]$[-19,-2,29,0]$[-48,-2,0,0]"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" xmi:id="_PWsfvFgZoygz036iIop2Ey" id="(0.98, 0)"/>
+    </edges>
+    <edges xmi:id="_gitQBLTPyV4mUfNYUeiTYD" visible="true" type="4125" source="_FE2ygJ-ybuPFbZyQnaAKZQ" target="_8Em-cpKOo7WaE_ML6Ej7V5">
+      <styles xsi:type="notation:ConnectorStyle" xmi:id="_KbGPFEzWeJfFhDxMr96mjY" roundedBendpointsRadius="0" routing="Rectilinear" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="16738622" lineWidth="-1"/>
+      <element xsi:nil="true"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" xmi:id="_IUALCxIBfUbwa4uGUdIlzL" points="[0,0,2,-31]$[0,20,2,-10]$[-2,20,0,-10]$[-2,31,0,0]"/>
+    </edges>
+    <edges xmi:id="_cbDZrJeeYnKVy1_cbT56-F" visible="true" type="4125" source="_cdxI92LAQt2E9YFZzUXiZU" target="_qQW12X31J6YXvg8Pm16zMx">
+      <styles xsi:type="notation:ConnectorStyle" xmi:id="_tpNLXlzOjIKLBAP3EzGaob" roundedBendpointsRadius="0" routing="Rectilinear" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="16738622" lineWidth="-1"/>
+      <element xsi:nil="true"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" xmi:id="_1AxQwm5_IG7K0MrmF1xq09" points="[0,0,5,62]$[0,-33,5,28]$[0,-33,4,28]$[0,-47,4,14]$[-5,-47,0,14]$[-5,-62,0,0]"/>
+    </edges>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_R6MEYC1gU_7DpnBB59IYFO" visible="true" type="CofluentPlatformModel" name="mem_tlm_Diagram" measurementUnit="Pixel">
+    <children xmi:id="_dlM6ViqyGE-9gKbeq9JWnd" visible="true" type="201">
+      <children xsi:type="notation:DecorationNode" xmi:id="_3tVh6RY47TqLvJdAA_upcm" visible="true" type="514"/>
+      <children xmi:id="_4UmeDGE5r2R9146af7ggIc" visible="true" type="304">
+        <children xsi:type="notation:Shape" xmi:id="_XuS2T5zg7VAxOWVLrvKAxh" visible="true" type="515" fontColor="0" fontName="Segoe UI" fontHeight="8" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="0" lineWidth="-1" roundedBendpointsRadius="0">
+          <children xsi:type="notation:DecorationNode" xmi:id="_ECWBnvTa0fMudyNFfJZD39" visible="true" type="516">
+            <layoutConstraint xsi:type="notation:Location" xmi:id="_fax_zff2zD3YtB_muGYy1f" x="5" y="25"/>
+          </children>
+          <styles xsi:type="notation:IntValueStyle" xmi:id="_VPyZ2Oiyx7I11eV31I84Eh" name="Rotated_Style"/>
+          <element href="chi_icn_sysSys.cf_plf#_kDtdAu1QY_iHiL1lWgQi8R"/>
+          <layoutConstraint xsi:type="notation:Bounds" xmi:id="_GVjguSd_NUw2vJZ20HlnIY" x="-100" y="-5" width="36" height="22"/>
+        </children>
+        <styles xsi:type="notation:DescriptionStyle" xmi:id="_Eu3ChR0N7qb2cHn-HbFE21" description=""/>
+        <styles xsi:type="notation:FontStyle" xmi:id="_uP0tA3agIArJr7Q8cvNcqp" fontColor="0" fontName="Segoe UI" fontHeight="8" bold="false" italic="false" underline="false" strikeThrough="false"/>
+        <styles xsi:type="notation:FillStyle" xmi:id="_tg_zrRswr4myDJbbWQVS7E" fillColor="16777215" transparency="-1"/>
+        <element href="chi_icn_sysSys.cf_plf#_kDtdAu1QY_iHiL1lWgQi8R"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_RiBh-1NIlKdDhTpQLtCKQb" x="-12" y="36" width="-1" height="-1"/>
+      </children>
+      <styles xsi:type="notation:FontStyle" xmi:id="_EF9R5kKHO0IlIy76u0uy2R" fontColor="0" fontName="Segoe UI" fontHeight="8" bold="false" italic="false" underline="false" strikeThrough="false"/>
+      <styles xsi:type="notation:LineStyle" xmi:id="_4Xv--tMHFtKunsKgjNS_R3" lineColor="0" lineWidth="-1"/>
+      <styles xsi:type="notation:DescriptionStyle" xmi:id="_IolHZSjXRd_tEhTYiWHE5I" description=""/>
+      <styles xsi:type="notation:FillStyle" xmi:id="_zHzrskf1QnsSQOA2nuAVvf" fillColor="16777215" transparency="-1"/>
+      <element href="chi_icn_sysSys.cf_plf#_LKw_U3ANhDQNeko1kEmd_C"/>
+      <layoutConstraint xsi:type="notation:Bounds" xmi:id="_skJKOZQENU1kkigR49B_iv" x="200" y="200" width="98" height="98"/>
+    </children>
+    <styles xsi:type="notation:DiagramStyle" xmi:id="_crsvFQMfJbVw147eow-W-R" pageX="0" pageY="0" pageWidth="100" pageHeight="100" description=""/>
+    <element href="chi_icn_sysSys.cf_plf#_LKw_U3ANhDQNeko1kEmd_C"/>
+    <edges xmi:id="_fy3XTwd5fhsJrfqKC_9ECP" visible="true" type="511" source="_4UmeDGE5r2R9146af7ggIc" target="_XuS2T5zg7VAxOWVLrvKAxh">
+      <styles xsi:type="notation:ConnectorStyle" xmi:id="_aNYeqqEWrmfQuPRR3rdtjo" roundedBendpointsRadius="0" routing="Rectilinear" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="0" lineWidth="-1"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" xmi:id="_gJbRiPGPBkPM99sgHvPXHP" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    </edges>
+  </notation:Diagram>
+</xmi:XMI>

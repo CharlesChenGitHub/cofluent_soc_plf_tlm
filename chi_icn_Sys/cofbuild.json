@@ -85,8 +85,8 @@
         "busInheritedConstructors": "cf_bus(name)"
     },
     "CofSetting.Path.Variables": {
-        "PROJECT_FOLDER": "/home/vscode/cofluent_soc_plf_tlm/chi_icn_Sys",
-        "COF_SCL_PATH": "/home/vscode/cof-pack/cof-scl-isim-9.1.0-221125_nolic"
+        "PROJECT_FOLDER": "~/cof-workspace/cofluent_soc_plf_tlm/chi_icn_Sys",
+        "COF_SCL_PATH": "~/cof-pack/cof-scl-isim-9.1.0-221125_nolic"
     },
     "chi_icn_Sys/chi_icn_Sys/models/chi_icn_SysSys.cf_sys_dg": [
         {

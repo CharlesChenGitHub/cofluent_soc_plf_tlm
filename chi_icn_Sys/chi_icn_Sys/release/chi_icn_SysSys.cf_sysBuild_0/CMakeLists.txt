@@ -36,14 +36,14 @@ INCLUDE(
 
 # Header directories
 INCLUDE_DIRECTORIES(
-    "/home/sunjiaqi/cof-workspace/cofluent_soc_plf_tlm/chi_icn_Sys/chi_icn_Sys/gen-sysc/chi_icn_SysSys/include"
+    "/home/sunjiaqi/cof-workspace/test/cofluent_soc_plf_tlm/chi_icn_Sys/chi_icn_Sys/gen-sysc/chi_icn_SysSys/include"
     "${PROJECT_FOLDER}/external/include"
     "${PROJECT_FOLDER}/external/include/chi"
     "${PROJECT_FOLDER}/external/include/chi/tlm-modules"
     "${PROJECT_FOLDER}/external/include/riscv-vp/rv32"
     "${PROJECT_FOLDER}/external/include/riscv-vp/common"
     "${PROJECT_FOLDER}/external/include/riscv-vp/softfloat-dist/include/softfloat"
-    "/home/sunjiaqi/cof-workspace/cofluent_soc_plf_tlm/chi_icn_Sys/external/include"
+    "/home/sunjiaqi/cof-workspace/test/cofluent_soc_plf_tlm/chi_icn_Sys/external/include"
     "/home/sunjiaqi/cof-pack/cof-scl-isim-9.1.0-221024_nolic/include/cofluent"
     "/home/sunjiaqi/cof-pack/cof-scl-isim-9.1.0-221024_nolic/include/cofluent_isim"
     "/home/sunjiaqi/cof-pack/cof-scl-isim-9.1.0-221024_nolic/include/isim-attrs-interface"
@@ -53,7 +53,7 @@ INCLUDE_DIRECTORIES(
 # Library directories
 LINK_DIRECTORIES(
 	"${PROJECT_FOLDER}/external/lib"
-    "/home/sunjiaqi/cof-workspace/cofluent_soc_plf_tlm/chi_icn_Sys/external/lib"
+    "/home/sunjiaqi/cof-workspace/test/cofluent_soc_plf_tlm/chi_icn_Sys/external/lib"
     "/home/sunjiaqi/cof-pack/cof-scl-isim-9.1.0-221024_nolic/lib/${COFS_LIBS_PATH_FOR_GCC}"
     "/home/sunjiaqi/cof-pack/cof-scl-isim-9.1.0-221024_nolic/lib"
 )

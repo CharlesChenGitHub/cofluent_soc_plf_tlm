@@ -1,0 +1,29 @@
+[
+    {
+        "runName": "chi_icn_sysSys.cf_sys_0",
+        "modelPath": "chi_icn_sys/chi_icn_sys/models/chi_icn_sysSys.cf_sys",
+        "executionFilePath": "chi_icn_sys/chi_icn_sys/release/chi_icn_sysSys.cf_sysBuild_0/chi_icn_sysSys.exe",
+        "generateTraceFile": false,
+        "simulationDuration": "20 ms",
+        "enableAlgorithmProfiling": false,
+        "enableArchitectureProfiling": false,
+        "verbosityLevel": "info",
+        "args": [
+            "--cf-gui-connect=yes",
+            "--cf-gui-ip-address=127.0.0.1",
+            "--cf-gui-socket=39000",
+            "--cf-gui-time-scale=ns",
+            "--cf-mon-config=file"
+        ],
+        "active": true,
+        "environment": "",
+        "workingDirectory": "",
+        "isim": {
+            "enableISIM": false,
+            "instanceName": "",
+            "preElaboration": [],
+            "postElaboration": [],
+            "postSimulation": []
+        }
+    }
+]
